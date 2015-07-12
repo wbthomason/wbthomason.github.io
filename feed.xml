@@ -5,19 +5,21 @@
     <description>A personal blog focusing on mathematics, computer science, and related topics.</description>
     <link>http://wbthomason.me/</link>
     <atom:link href="http://wbthomason.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Jul 2015 09:08:34 -0400</pubDate>
-    <lastBuildDate>Sun, 12 Jul 2015 09:08:34 -0400</lastBuildDate>
+    <pubDate>Sun, 12 Jul 2015 09:52:09 -0400</pubDate>
+    <lastBuildDate>Sun, 12 Jul 2015 09:52:09 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Hidden Markov Models in C++</title>
-        <description>&lt;p&gt;In this post, we’ll explore the math behind Hidden Markov Models (or HMMs),&lt;br /&gt;
-and then work through a practical implementation in C++.&lt;br /&gt;
-You can find the final implementation &lt;a href=&quot;https://github.com/wbthomason/crouchingtigerhiddenmarkov&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;
-We’ll be explaining everything from fundamentals for this, so you shouldn’t&lt;br /&gt;
-need any preexisting knowledge (other than working knowledge of C++).&lt;br /&gt;
-That said, a basic grounding in probability may help you grasp the concepts more&lt;br /&gt;
-easily.&lt;br /&gt;
+        <description>&lt;p&gt;In this post, we’ll explore the math behind Hidden Markov Models (or HMMs),
+and then work through a practical implementation, which the Magical Wheel of
+Languages™ says will be in C++.
+You can find the final implementation
+&lt;a href=&quot;https://github.com/wbthomason/crouchingtigerhiddenmarkov&quot;&gt;here&lt;/a&gt;.
+We’ll be explaining everything from fundamentals for this, so you shouldn’t
+need any preexisting knowledge (other than working knowledge of C++).
+That said, a basic grounding in probability may help you grasp the concepts more
+easily.
 &lt;!--more--&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Jul 2015 23:21:23 -0400</pubDate>
