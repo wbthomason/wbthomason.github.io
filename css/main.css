@@ -181,7 +181,7 @@ pre {
       border-radius: 5px;
       text-align: right; }
       .site-nav .menu-icon {
-        display: block;
+        display: flex;
         float: right;
         width: 36px;
         height: 26px;
