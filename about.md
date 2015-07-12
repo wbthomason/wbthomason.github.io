@@ -1,11 +1,32 @@
 ---
 layout: page
-title: About
+title: about
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+# about me
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+* Name: Wil Thomason
+* Occupation:
+  * Student (Cornell PhD CS, previously UVA)
+  * Researcher
+  * [Coder](https://github.com/wbthomason)
+* Likes:
+  * Math
+  * Computer Science
+  * Robotics
+  * Programming Languages
+  * Lists
+* Dislikes:
+  * Bananas
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+# about the blog
+
+A collection of postings on a variety of topics, mostly math and CS-related in
+nature.
+A fair number of tutorial-esque articles (I like learning about things, and
+find that writing about them is one of the best ways to crystallize that
+knowledge), as well as some more opinion-based essays, and discussions of my
+other personal projects.
+Hopefully useful to someone other than myself.
+Not a banana.
