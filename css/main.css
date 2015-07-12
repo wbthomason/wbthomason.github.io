@@ -160,6 +160,9 @@ pre {
   letter-spacing: -1px; }
   .site-title, .site-title:visited {
     color: #424242; }
+  @media screen and (max-width: 600px) {
+    .site-title {
+      font-size: 23px; } }
 
 .site-nav {
   float: right;
@@ -182,7 +185,6 @@ pre {
       text-align: right; }
       .site-nav .menu-icon {
         display: block;
-        clear: both;
         float: right;
         width: 36px;
         height: 26px;
