@@ -7,7 +7,7 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | timeago }} - {{ post.content | number_of_words }} words - {{ post.content | reading_time }}</span>
+        <span class="excerpt-meta">{{ post.date | timeago }} - {{ post.content | number_of_words }} words - {{ post.content | reading_time }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

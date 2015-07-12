@@ -11,7 +11,6 @@
 
 .site-title {
     display: flex;
-    clear: both;
     justify-content: center;
     align-items: center;
     font-size: 35px;
@@ -183,6 +182,14 @@
 }
 
 .post-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.excerpt-meta {
     font-size: $small-font-size;
     color: $grey-color;
 }
@@ -203,6 +210,9 @@
 
 .post-title {
     font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     letter-spacing: -1px;
     line-height: 1;
 
