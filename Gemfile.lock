@@ -36,6 +36,10 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
+    jekyll-smartify (0.0.3)
+      liquid (>= 2.5, < 4.0)
+      redcarpet (~> 3.1)
+    jekyll-timeago (0.8.2)
     jekyll-watch (1.2.1)
       listen (~> 2.7)
     kramdown (1.8.0)
@@ -81,6 +85,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.3.2)
+    ruby-oembed (0.8.14)
     rubypants (0.2.0)
     safe_yaml (1.0.4)
     sass (3.4.16)
@@ -95,11 +100,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  jekyll-smartify
+  jekyll-timeago
   octopress (~> 3.0)
   octopress-gist
   octopress-paginate
   octopress-quote-tag
   octopress-social
+  ruby-oembed
 
 BUNDLED WITH
    1.10.5

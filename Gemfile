@@ -6,3 +6,6 @@ group :jekyll_plugins do
   gem 'octopress-quote-tag'
   gem 'octopress-social'
 end
+gem 'ruby-oembed'
+gem 'jekyll-smartify'
+gem 'jekyll-timeago'
