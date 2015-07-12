@@ -152,6 +152,7 @@ pre {
 
 .site-title {
   display: flex;
+  clear: both;
   justify-content: center;
   align-items: center;
   font-size: 35px;
