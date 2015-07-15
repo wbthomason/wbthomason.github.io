@@ -170,9 +170,10 @@ pre {
     .site-title {
       font-size: 23px; } }
 
-.right {
+.about-portrait {
   float: right;
-  display: block; }
+  display: block;
+  margin-right: 250px; }
 
 .site-nav {
   float: right;
