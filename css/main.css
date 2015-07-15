@@ -170,6 +170,10 @@ pre {
     .site-title {
       font-size: 23px; } }
 
+.right {
+  float: right;
+  display: block; }
+
 .site-nav {
   float: right;
   line-height: 56px; }
