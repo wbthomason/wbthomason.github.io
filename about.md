@@ -4,7 +4,7 @@ title: about
 permalink: /about/
 ---
 
-{% img about-portrait https://avatars0.githubusercontent.com/u/3729908?v=3&s=460 %}
+{% img about-portrait /assets/about-photo.jpg 300 300 %}
 
 # about me
 
