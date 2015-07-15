@@ -177,7 +177,9 @@ pre {
   @media screen and (max-width: 600px) {
     .about-portrait {
       margin-right: auto;
-      margin-left: auto; } }
+      margin-left: auto;
+      width: 100%;
+      clear: both; } }
 
 .site-nav {
   float: right;
