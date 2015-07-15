@@ -27,9 +27,17 @@
     }
 }
 
-.right {
+.about-portrait {
   float: right;
   display: block;
+  margin-right: 250px;
+  
+  @include media-query($on-palm) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    clear: both;
+  }
 }
 
 .site-nav {
