@@ -5,6 +5,7 @@ group :jekyll_plugins do
   gem 'octopress-paginate'
   gem 'octopress-quote-tag'
   gem 'octopress-social'
+  gem 'octopress-image-tag'
 end
 gem 'ruby-oembed'
 gem 'jekyll-smartify'

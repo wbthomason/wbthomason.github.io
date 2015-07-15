@@ -6,6 +6,7 @@ baseurl: ""
 url: "http://wbthomason.me" 
 twitter_username: wilthomason
 github_username:  wbthomason
+titlecase: false
 
 # Build settings
 markdown: kramdown

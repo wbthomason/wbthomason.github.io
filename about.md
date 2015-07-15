@@ -4,6 +4,8 @@ title: about
 permalink: /about/
 ---
 
+  {% img right https://avatars0.githubusercontent.com/u/3729908?v=3&s=460 %}
+
 # about me
 
 * Name: Wil Thomason
