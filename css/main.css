@@ -163,7 +163,8 @@ pre {
   align-items: center;
   font-size: 35px;
   line-height: 56px;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  margin-top: 30px; }
   .site-title, .site-title:visited {
     color: #424242; }
   @media screen and (max-width: 600px) {
