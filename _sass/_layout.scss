@@ -193,6 +193,11 @@
     > li {
         margin-bottom: $spacing-unit;
     }
+
+    p { 
+      width: 95%;
+      margin-left: 20px;
+  }
 }
 
 .post-meta {
@@ -260,5 +265,10 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+
+    p {
+      width: 95%;
+      margin-left: 20px;
     }
 }
