@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>something bloglike</title>
+    <description>A personal blog focusing on mathematics, computer science, and related topics.</description>
+    <link>http://wbthomason.me/</link>
+    <atom:link href="http://wbthomason.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 12 Sep 2015 00:40:09 -0400</pubDate>
+    <lastBuildDate>Sat, 12 Sep 2015 00:40:09 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>The Great Emacs Trial of 2015</title>
+        <description>&lt;p&gt;I recently swallowed my pride and gave Emacs a try, in hopes of collecting Vim-pirical&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; evidence that I’d chosen the correct editor for myself initially. 
+Though I didn’t intend to write about the experience, I’ve been told that some of my insights as a heavy Vim user and Emacs newbie are interesting.
+As well, the trial wasn’t the black and white case I’d half hoped for, which means that my little experiment may be of use to some others.
+At least, that’s the hope.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;the-emacsculate2-conception&quot;&gt;The Emacsculate&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; Conception&lt;/h1&gt;
+
+&lt;p&gt;I associate with a fairly large number of Emacs users&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, some of whom are converts from Vim.
+Personally, I’m a Neovim&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; user, but I’m frequently told that Emacs is worth a try - in particular, Emacs with &lt;code&gt;evil-mode&lt;/code&gt;.
+My usual counters are nothing especially original - Emacs is a great OS with a terrible editor, modal editing is much more powerful, etc.&lt;/p&gt;
+
+&lt;p&gt;Recently, however, one of my Emacs-using friends remarked that Vim is a “terrible implementation of a beautiful idea”.
+Based upon what I know about the Vim codebase&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;, Vim’s lack of asynchonicity, Vimscript, etc. and my appreciation for the power of composable, modal editing, I found this to be a surprisingly compelling argument.&lt;/p&gt;
+
+&lt;p&gt;In addition, &lt;a href=&quot;http://wikemacs.org/wiki/Evil&quot;&gt;evil-mode&lt;/a&gt; has become a fairly full-featured replica of Vim’s functionality, and I was wooed by promises of &lt;code&gt;package-install&lt;/code&gt;, Elisp for configuration, and a collection of helpful blog posts on switching to Emacs from Vim&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;emacs-emacs&quot;&gt;$ emacs ~/.emacs&lt;/h1&gt;
+
+&lt;p&gt;Once convinced to give emacs a chance, I proceeded to get it installed and set about replicating my Vim setup (in terms of Vim keybindings and certain plugins I consider essential - specifically &lt;a href=&quot;https://github.com/kien/ctrlp.vim&quot;&gt;ctrlP&lt;/a&gt;, &lt;a href=&quot;https://github.com/scrooloose/syntastic&quot;&gt;syntastic&lt;/a&gt;, &lt;a href=&quot;https://github.com/Valloric/YouCompleteMe&quot;&gt;YouCompleteMe&lt;/a&gt;, and various linters/semantic completers for these).&lt;/p&gt;
+
+&lt;p&gt;Most of this was pretty straightforward. 
+&lt;code&gt;evil-mode&lt;/code&gt; installs with a single command and is enabled globally with a line of Elisp, and it’s a similar case for adding Vim-like tabs, line numbers, and scrolling&lt;sup id=&quot;fnref:7&quot;&gt;&lt;a href=&quot;#fn:7&quot; class=&quot;footnote&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;.
+&lt;code&gt;helm&lt;/code&gt; is a pretty fantastic &lt;code&gt;ctrlP&lt;/code&gt; analogue, and arguably more powerful&lt;sup id=&quot;fnref:8&quot;&gt;&lt;a href=&quot;#fn:8&quot; class=&quot;footnote&quot;&gt;8&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;The puns only get worse. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;This is a pun, not a typo. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;Gross, I know. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;If you don’t use it, do. If you haven’t heard of it, check it out: &lt;a href=&quot;http://neovim.io/&quot;&gt;neovim.io&lt;/a&gt; &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:5&quot;&gt;
+      &lt;p&gt;Based on &lt;a href=&quot;http://geoff.greer.fm/2015/01/15/why-neovim-is-better-than-vim/&quot;&gt;this excellent post&lt;/a&gt;, &lt;a href=&quot;https://github.com/vim/vim&quot;&gt;the source itself&lt;/a&gt;, and &lt;a href=&quot;https://news.ycombinator.com/item?id=7287668&quot;&gt;general discussion&lt;/a&gt;. &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:6&quot;&gt;
+      &lt;p&gt;Namely &lt;a href=&quot;http://blog.jakubarnold.cz/2014/06/23/evil-mode-how-to-switch-from-vim-to-emacs.html&quot;&gt;this post&lt;/a&gt;, the famous &lt;a href=&quot;https://bling.github.io/blog/2013/10/27/emacs-as-my-leader-vim-survival-guide/&quot;&gt;“Emacs as My &amp;lt;Leader&amp;gt;”&lt;/a&gt; post, and &lt;a href=&quot;http://juanjoalvarez.net/es/detail/2014/sep/19/vim-emacsevil-chaotic-migration-guide/&quot;&gt;this&lt;/a&gt; really good migration guide. &lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:7&quot;&gt;
+      &lt;p&gt;Though I was surprised to find that this wasn’t built in by default, particularly given stereotypes about emacs’ “…and the backup kitchen sink” philosophy. &lt;a href=&quot;#fnref:7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:8&quot;&gt;
+      &lt;p&gt;That said, I think a lot of the added power comes from the fact that emacs &lt;a href=&quot;#fnref:8&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 05 Sep 2015 19:47:54 -0400</pubDate>
+        <link>http://wbthomason.me/2015/09/05/the-great-emacs-trial-of-2015.html</link>
+        <guid isPermaLink="true">http://wbthomason.me/2015/09/05/the-great-emacs-trial-of-2015.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>hidden markov models in c++</title>
+        <description>&lt;p&gt;In this thrilling installment of &lt;em&gt;something bloglike&lt;/em&gt;, we’re going to learn
+about Hidden Markov Models (more succinctly referred to as HMMs). We’ll
+start with the math behind the model, and then work through a practical
+implementation, which the Magical Wheel of Languages™ says will be in C++.
+You can find the final implementation
+&lt;a href=&quot;https://github.com/wbthomason/crouchingtigerhiddenmarkov&quot;&gt;here&lt;/a&gt;.
+Everything necessssary will be explained from fundamentals, so you shouldn’t
+need any preexisting knowledge (other than familiarity with C++) to get the gist
+of the tutorial.
+That said, a basic grounding in probability may help you grasp the concepts more
+easily.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;overview&quot;&gt;overview&lt;/h1&gt;
+&lt;p&gt;To begin, let’s imagine that you have a problem&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+You, a much-heralded up-and-coming middle manager at MarbleCorp™’s newest production facility,
+want to get ahead in the world&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, and snatch the promotion to upper-middle manager right out of 
+Jenkins’ grubby hands. It’s your right, dammit!&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;
+To do so, you figure you can get a leg up by devising a clever analysis of the marble selection
+processes of MarbleCorp™’s biggest competitor, SphereCo Inc.™, which is renowned in the industry&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;
+for its marvelous balance of red, yellow, and blue marbles in finished bags.
+However, you are also a person of honor, and simply snooping on their bagging line goes against your moral code.
+“Whatever to do?”, you forlornly ask yourself, eyes welling with tears.
+“If only I had some mathematical model for estimating state sequence probabilities given observations of a corresponding output sequence.”&lt;/p&gt;
+
+&lt;p&gt;Suddenly, a spark of light fills your eyes, and a grin replaces the grimace of moments before&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;.
+“Ah-ha!”, you exclaim, jumping to your feet, “I can use a Hidden Markov Model!”
+Grinning like a madman, you hurry to your desk, and begin to work.
+You’ve realized that - knowing, as you do&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;, the distribution of colors of marble within each of the mighty
+marble silos used in the SphereCo factory, and being able to&lt;/p&gt;
+
+&lt;h1 id=&quot;the-math&quot;&gt;the math&lt;/h1&gt;
+&lt;p&gt;In the beginning was the Markov Property, and the Markov Property was good.
+The Markov property (as a moderate grasp of naming conventions and foreshadowing should lead you to expect)
+is really the crux of the entire family of Markov models, of which there are a fair few.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-code&quot;&gt;the code&lt;/h1&gt;
+
+&lt;h1 id=&quot;final-words&quot;&gt;final words&lt;/h1&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;This shouldn’t be so hard to do. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;An admirable goal. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;YOURS. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;Here I presume that such an industry exists. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:5&quot;&gt;
+      &lt;p&gt;You are remarkably emotive for a factory manager. &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:6&quot;&gt;
+      &lt;p&gt;Of course you do. Don’t question it. &lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 11 Jul 2015 23:21:23 -0400</pubDate>
+        <link>http://wbthomason.me/2015/07/11/hidden-markov-models-in-c.html</link>
+        <guid isPermaLink="true">http://wbthomason.me/2015/07/11/hidden-markov-models-in-c.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
