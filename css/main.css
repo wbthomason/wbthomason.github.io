@@ -183,8 +183,7 @@ pre {
       margin-right: auto;
       margin-left: auto;
       width: 100%;
-      clear: both;
-      float: right; } }
+      clear: both; } }
 
 .site-nav {
   float: right;
@@ -200,7 +199,7 @@ pre {
     .site-nav {
       position: absolute;
       top: 9px;
-      right: 30px;
+      right: 15px;
       background-color: #fdfdfd;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
