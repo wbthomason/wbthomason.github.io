@@ -7,13 +7,17 @@
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    border-bottom: 2px solid $grey-color-light;
+    width: 75%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .site-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 65px;
     line-height: 56px;
     letter-spacing: -1px;
     margin-top: 30px;
