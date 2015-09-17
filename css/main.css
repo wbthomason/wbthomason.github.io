@@ -177,7 +177,8 @@ pre {
 .about-portrait {
   float: right;
   display: block;
-  margin-right: 250px; }
+  margin-right: 20px;
+  padding: 20px; }
   @media screen and (max-width: 600px) {
     .about-portrait {
       margin-right: auto;
