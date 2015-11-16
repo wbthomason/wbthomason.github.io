@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://wbthomason.co/blog/about/</loc>
-        <lastmod>2015-11-15T22:10:16-05:00</lastmod>
+        <loc>http://wbthomason.co/about/</loc>
+        <lastmod>2015-11-15T22:50:14-05:00</lastmod>
     </url>
     <url>
-        <loc>http://wbthomason.co/blog/</loc>
-        <lastmod>2015-11-15T22:10:16-05:00</lastmod>
+        <loc>http://wbthomason.co/</loc>
+        <lastmod>2015-11-15T22:50:14-05:00</lastmod>
     </url>
     <url>
-        <loc>http://wbthomason.co/blog/css/main.css</loc>
-        <lastmod>2015-11-15T22:10:16-05:00</lastmod>
+        <loc>http://wbthomason.co/css/main.css</loc>
+        <lastmod>2015-11-15T22:50:14-05:00</lastmod>
     </url>
 </urlset>
