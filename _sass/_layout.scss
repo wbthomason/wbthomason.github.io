@@ -40,6 +40,8 @@
     }
 
     @include media-query($on-palm) {
+      position: relative;
+      z-index:1;
       font-size: 23px;
     }
 }
