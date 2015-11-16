@@ -27,7 +27,29 @@ Once convinced to give emacs a chance, I proceeded to get it installed and set a
 
 Most of this was pretty straightforward. 
 `evil-mode` installs with a single command and is enabled globally with a line of Elisp, and it's a similar case for adding Vim-like tabs, line numbers, and scrolling[^7].
-`helm` is a pretty fantastic `ctrlP` analogue, and arguably more powerful[^8]
+`helm` is a pretty fantastic `ctrlP` analogue, and arguably more powerful[^8].
+
+
+
+So, some unsolicited thoughts on emacs: So far, I'm really impressed with the package manager for the most part - I think I prefer Plug.vim, but there are definitely a lot of features about package-install which are better, and all other vim plugin managers are inferior to Plug.vim, so...
+
+I also love the config file experience. Not having to use VimL is wonderful, as is the ease and power of ELisp.
+
+The interface has some nice things, and some things I think of as inferior to vim. I do need to figure out how to replicate the line highlighting you showed me in Vim.
+
+The plugin/package ecosystem is hella inferior to vim's, though. Both in quality and selection, I far and away prefer what I've seen with vim.
+
+I do like having asynchronicity, a lot. I can get that by using neovim, though (which is actually what I mean when I say vim), although not many package developers take advantage of it yet.
+
+Evil mode is also mostly good, but a bit lacking - in particular, the fact that I still have to know emacs shortcuts for other buffers (package install, etc.) is not great.
+
+I think if vim had a searchable package interface akin to list-packages, more asynchronous plugins, and some non-viml language for config, my decision would be super easy: stick with vim. Given this, I may take some time to try to get/build these things for neovim
+
+wil [2:09 AM]
+All that said, I'm not giving up on emacs yet
+
+wil [2:09 AM]
+Going to give it a week or so, I think
 
 [^1]: The puns only get worse.
 [^2]: This is a pun, not a typo.
@@ -36,4 +58,4 @@ Most of this was pretty straightforward.
 [^5]: Based on [this excellent post](http://geoff.greer.fm/2015/01/15/why-neovim-is-better-than-vim/), [the source itself](https://github.com/vim/vim), and [general discussion](https://news.ycombinator.com/item?id=7287668).
 [^6]: Namely [this post](http://blog.jakubarnold.cz/2014/06/23/evil-mode-how-to-switch-from-vim-to-emacs.html), the famous ["Emacs as My \<Leader\>"](https://bling.github.io/blog/2013/10/27/emacs-as-my-leader-vim-survival-guide/) post, and [this](http://juanjoalvarez.net/es/detail/2014/sep/19/vim-emacsevil-chaotic-migration-guide/) really good migration guide.
 [^7]: Though I was surprised to find that this wasn't built in by default, particularly given stereotypes about emacs' "...and the backup kitchen sink" philosophy.
-[^8]: That said, I think a lot of the added power comes from the fact that emacs
+[^8]: That said, I think a lot of the added power comes from the fact that Emacs has a lot more functionality built in than Vim.
