@@ -3,10 +3,10 @@
   <channel>
     <title>something bloglike</title>
     <description>A personal blog focusing on mathematics, computer science, and related topics.</description>
-    <link>http://wbthomason.me/</link>
-    <atom:link href="http://wbthomason.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Nov 2015 22:11:28 -0500</pubDate>
-    <lastBuildDate>Sun, 15 Nov 2015 22:11:28 -0500</lastBuildDate>
+    <link>http://wbthomason.co/blog/</link>
+    <atom:link href="http://wbthomason.co/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 15 Nov 2015 22:18:32 -0500</pubDate>
+    <lastBuildDate>Sun, 15 Nov 2015 22:18:32 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
   </channel>
