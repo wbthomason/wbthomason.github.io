@@ -160,6 +160,13 @@ pre {
   margin-left: auto;
   margin-right: auto; }
 
+.trigger {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto; }
+
 .site-title {
   display: flex;
   justify-content: center;
@@ -187,6 +194,8 @@ pre {
       clear: both; } }
 
 .site-nav {
+  padding-top: 10px;
+  width: 100%;
   float: right;
   line-height: 56px; }
   .site-nav .menu-icon {
