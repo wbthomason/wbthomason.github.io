@@ -70,12 +70,19 @@ GEM
       jekyll (>= 2.0)
     octopress-image-tag (1.1.0)
       jekyll
+    octopress-markdown-tag (1.1.2)
+      jekyll (~> 2.0)
     octopress-paginate (1.1.2)
       octopress-hooks
     octopress-quote-tag (1.0.4)
       jekyll
       rubypants
+    octopress-render-tag (1.0.7)
+      jekyll (>= 2.0)
+      octopress-tag-helpers (~> 1.0)
     octopress-social (1.4.5)
+      jekyll (>= 2.0)
+    octopress-tag-helpers (1.0.8)
       jekyll (>= 2.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
@@ -107,8 +114,10 @@ DEPENDENCIES
   octopress (~> 3.0)
   octopress-gist
   octopress-image-tag
+  octopress-markdown-tag
   octopress-paginate
   octopress-quote-tag
+  octopress-render-tag
   octopress-social
   ruby-oembed
 

@@ -1,8 +1,8 @@
 # Site settings
 title: Wil Thomason
-email: first.last@google's email service
-description: A personal blog focusing on mathematics, computer science, and related topics.
-baseurl: "/blog"
+email: wbthomason@{my department}.{my university}.edu
+description: "The professional site of Wil Thomason"
+baseurl: ""
 url: "http://wbthomason.co" 
 twitter_username: wilthomason
 github_username:  wbthomason

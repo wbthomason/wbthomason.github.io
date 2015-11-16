@@ -5,17 +5,9 @@ layout: default
 <div class="home">
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="excerpt-meta">{{ post.date | timeago }} - {{ post.content | number_of_words }} words - {{ post.content | reading_time }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p class="post-excerpt">{{ post.excerpt }}</p>
-        <a class="readmore-link" href="{{ post.url | prepend: site.baseurl }}">continue reading</a>
-      </li>
-    {% endfor %}
+    <li>{% render about.md %}</li>
+    <li>{% render links.md %}</li>
+    <li>{% render contact.md %}</li>
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

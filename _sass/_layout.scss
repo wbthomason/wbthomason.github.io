@@ -13,6 +13,14 @@
     margin-right:auto;
 }
 
+.trigger {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .site-title {
     display: flex;
     justify-content: center;
@@ -47,6 +55,8 @@
 }
 
 .site-nav {
+    padding-top: 10px;
+    width: 100%;
     float: right;
     line-height: 56px;
 
@@ -178,7 +188,7 @@
     }
 }
 
-
+dd { padding-left: $spacing-unit; padding-bottom: $spacing-unit; }
 
 /**
  * Page content

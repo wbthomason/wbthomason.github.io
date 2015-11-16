@@ -6,6 +6,8 @@ group :jekyll_plugins do
   gem 'octopress-quote-tag'
   gem 'octopress-social'
   gem 'octopress-image-tag'
+  gem 'octopress-markdown-tag'
+  gem 'octopress-render-tag'
 end
 gem 'ruby-oembed'
 gem 'jekyll-smartify'
