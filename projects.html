@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Wil Thomason</title>
+  <title>projects</title>
   <meta name="description" content="The professional site of Wil Thomason">
 
-  <link rel="canonical" href="http://wbthomason.co/">
+  <link rel="canonical" href="http://wbthomason.co/projects.html">
   <link rel="alternate" type="application/rss+xml" title="Wil Thomason" href="http://wbthomason.co/feed.xml" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="/js/footnotes.js"></script>
@@ -80,38 +80,86 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <ul class="post-list">
-    <li><p><img class="about-portrait" src="/assets/about-photo.jpg" width="300" height="300" /></p>
+  <article class="post-content">
+    <h1 id="research">Research</h1>
 
-<p>I’m Wil Thomason, a first-year PhD student in computer science at Cornell.  My
-primary research interests are in robotics, though I’m also interested
-inprogramming languages, algorithms, machine learning, and combinations of all
-of these.  In particular, I’m interested in algorithms for efficient cooperation
-in heterogenous multi-agent scenarios. I want teams of humans and arbitrary
-robotic systems to be able to work together in a manner which both “feels”
-natural (i.e. equivalent to or better than working with a team of humans alone)
-and is efficient and effective (i.e. utilizes differences in capabilities
-between the agents well, eliminates redundant work, allows for the
-accomplishment of tasks flexibly and quickly, etc.)</p></li>
-    <li><p>This site contains references to my <a href="/W.Thomason_CV.pdf">CV</a>, a list of my <a href="/publications">publications and
-presentations</a>, descriptions of a selection of my <a href="/projects">projects</a>, my
-(infrequently updated) <a href="/blog">blog</a>, and my <a href="https://github.com/wbthomason">Github profile</a>. For your
-convenience, these are linked both at the top of the page and in the previous
-sentence.</p></li>
-    <li><p>I can be contacted through any of the below media, given in no particular order:</p>
+<dl>
+  <dt><a href="https://github.com/wbthomason/unfamiliar-gestures">unfamiliar gestures</a></dt>
+  <dd>My current research project seeks to create and analyze a framework capable of
+inferring meaning from unfamiliar human gestures. In interactions between
+humans, we frequently assume shared contextual knowledge and common grounding.
+This allows us to make gestures without a guarantee that our conversational
+partners are familiar with them, but maintain a reasonable level of certainty
+that we will be understood. Although this is a desirable ability for human-robot
+interactions, current approaches to understanding gestures, natural language, or
+the fusion thereof, fall short in this area. I hope to solve this problem.</dd>
+  <dt><a href="https://github.com/wbthomason/rosbeam">rosbeam</a></dt>
+  <dd>As part of an effort to enable the Beam Remote Presence Device to be usable as
+a platform for robotic development, I updated and improved upon a project to
+reverse engineer the Beam’s motor control interface and provide a ROS wrapper.
+Starting from the <a href="https://github.com/xlz/rosbeam">prior work</a>, this entailed a rewriting of the
+primary mechanism used to enable execution of foreign code. The internals of the
+Beam software had changed significantly since the original project was created,
+so the rewriting was a good opportunity to also restructure the code. Doing so
+resulted in a much more future-proof implementation of the original approach.
+The project was fairly short and easy, and is currently being used in the
+experimental verification phase of another research effort into algorithms for
+social navigation.</dd>
+</dl>
 
-<ul>
-  <li>{firstname}.{lastname}@{google’s mail service}</li>
-  <li>wbthomason ( at ) {my department}.{my university}.edu</li>
-  <li>Twitter: <a href="https://twitter.com/wilthomason">@wilthomason</a></li>
-  <li>Github: <a href="https://github.com/wbthomason">wbthomason</a></li>
-  <li>Skype: Request via email</li>
-</ul></li>
-  </ul>
+<h1 id="personal">Personal</h1>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<dl>
+  <dt><a href="https://github.com/wbthomason/bork">bork</a></dt>
+  <dd>bork stems from a frustration of mine with most package managers. By
+necessity, I use systems running Windows, OS X, and several distros of Linux
+(primarily Arch and Ubuntu). This combination forms an uneven surface of package
+manager capabilities and interfaces. Further, I have yet to find a package
+manager which supports all of my desired use cases natively and easily (though
+Arch’s pacman comes closest). This, combined with a desire to use <a href="https://www.rust-lang.org/">Rust</a>
+for a real project, led me to create bork, which I refer to as a “package
+manager-manager” (i.e. a manager of package managers). It allows for a clean,
+extensible union of arbitrary package sources (whether other managers,
+independent build processes, or otherwise) and provides a fast, uniform
+interface with highly expressive composable commands.</dd>
+  <dt><a href="https://github.com/wbthomason/minigrade">minigrade</a></dt>
+  <dd>Minigrade is fundamentally a very powerful, extensible autograding server.
+Created originally for a class I TAed in undergrad, it sought to provide a
+lightweight, secure, and fast server for grading programming assignments by running test
+cases and streaming the results back to the user. In the implementation of the
+test case/evaluation side of things, a fairly powerful mechanism for describing
+partial evaluation states was created and added. I’m in the process of rewriting
+Minigrade in <a href="http://elixir-lang.org">Elixir</a> for increased performance and
+robustness.</dd>
+  <dt><a href="https://github.com/wbthomason/drunk-uncle">drunk uncle</a></dt>
+  <dd>Drunk Uncle (named for the <a href="https://www.nbc.com/saturday-night-live/cast/bobby-moynihan-15336/character/drunk-uncle-16241">Bobby Moynihan character</a>) is an automated
+argument system. It started as a project at HackDuke, and was rewritten
+afterward for performance and capability. Essentially, given an opinionated
+statement on a subject, Drunk Uncle determines the sentiment and subject of the
+statement and searches the Internet for evidence against the statement. This
+evidence is then presented to the user in an insulting manner. The system is
+only a novelty, and I do not recommend its use by anyone for anything, ever.</dd>
+  <dt><a href="https://github.com/wbthomason/ironkernel">ironkernel</a></dt>
+  <dd>IronKernel was one of the first kernels written in Rust, back when the
+language was in version 0.8 or so. Though it’s now little more than a curiosity,
+given how fast the language has evolved and the creation of more robust kernels
+and operating systems (such as <a href="https://github.com/redox-os/redox">redox</a>), it
+was a fun project at the time, and achieved a degree of notice in the Rust
+community.</dd>
+  <dt><a href="https://github.com/wbthomason/botulism">botulism</a></dt>
+  <dd>In undergrad, I worked as a TA for a class offered both to the open Internet
+and students at my university. We needed an IRC bot for the course to
+communicate with students outside of the university, so, as a simple exercise, I
+wrote botulism - a Python library for IRC bots and a sample bot implemented
+using the library. I’m fairly certain that there are more fully-featured, robust
+libraries for this purpose by now, but botulism remains one of the simplest I’ve
+seen, and served its purpose well.</dd>
+</dl>
+
+
+  </article>
 
 </div>
 

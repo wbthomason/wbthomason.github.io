@@ -279,6 +279,9 @@ pre {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
+dd {
+  padding-left: 30px; }
+
 /**
  * Page content
  */
