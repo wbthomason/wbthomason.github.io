@@ -181,6 +181,8 @@ pre {
     color: #424242; }
   @media screen and (max-width: 600px) {
     .site-title {
+      position: relative;
+      z-index: 1;
       font-size: 23px; } }
 
 .about-portrait {
