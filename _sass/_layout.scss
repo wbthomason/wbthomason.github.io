@@ -14,12 +14,16 @@
 }
 
 .trigger {
-  width: 95%;
-  display: flex;
-  justify-content: center;
+  display: table;
+  justify-content: space-between;
+  table-layout: fixed;
   margin-left: auto;
   margin-right: auto;
+  > a {
+    display: inline;
+  }
 }
+
 
 .site-title {
     display: flex;
