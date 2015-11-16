@@ -213,7 +213,8 @@ pre {
       background-color: #fdfdfd;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
-      text-align: right; }
+      text-align: right;
+      clear: both; }
       .site-nav .menu-icon {
         display: block;
         float: right;
