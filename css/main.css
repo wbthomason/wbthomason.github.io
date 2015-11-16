@@ -289,7 +289,8 @@ pre {
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
 dd {
-  padding-left: 30px; }
+  padding-left: 30px;
+  padding-bottom: 30px; }
 
 /**
  * Page content
