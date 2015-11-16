@@ -1,9 +1,9 @@
 # Site settings
-title: something bloglike
+title: Wil Thomason
 email: first.last@google's email service
 description: A personal blog focusing on mathematics, computer science, and related topics.
-baseurl: ""
-url: "http://wbthomason.me" 
+baseurl: "/blog"
+url: "http://wbthomason.co" 
 twitter_username: wilthomason
 github_username:  wbthomason
 titlecase: false
