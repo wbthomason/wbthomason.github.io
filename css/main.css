@@ -160,6 +160,15 @@ pre {
   margin-left: auto;
   margin-right: auto; }
 
+.trigger {
+  display: table;
+  justify-content: space-between;
+  table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto; }
+  .trigger > a {
+    display: inline; }
+
 .site-title {
   display: flex;
   justify-content: center;
@@ -172,6 +181,8 @@ pre {
     color: #424242; }
   @media screen and (max-width: 600px) {
     .site-title {
+      position: relative;
+      z-index: 1;
       font-size: 23px; } }
 
 .about-portrait {
@@ -187,6 +198,8 @@ pre {
       clear: both; } }
 
 .site-nav {
+  padding-top: 10px;
+  width: 100%;
   float: right;
   line-height: 56px; }
   .site-nav .menu-icon {
@@ -279,6 +292,10 @@ pre {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
+dd {
+  padding-left: 30px;
+  padding-bottom: 30px; }
+
 /**
  * Page content
  */
