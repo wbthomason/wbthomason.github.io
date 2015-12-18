@@ -11,4 +11,4 @@ Currently in submission to IJRFITA.
 
 # Presentations
 
-Also forthcoming!
+Forthcoming!
