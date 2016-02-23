@@ -1,5 +1,5 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
+styles, `#sidebar-checkbox` for behavior. -->
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <!-- Toggleable sidebar -->
@@ -7,10 +7,14 @@
   <div class="sidebar-top-image sidebar-item">
     <img src="/media/about-photo.jpg" class="sidebar-photo"/>
   </div>
+  <h3 class="sidebar-item sidebar-top-name"> Wil Thomason </h3>
+
   <div class="sidebar-item sidebar-top-desc">
-    <p>This is the personal site of Wil Thomason. I'm a researcher, coder, and
-    side-project addict. Working toward a PhD in CS at Cornell University. I
-    make robots do interesting things.</p>
+    <p>
+      I'm a researcher, coder, and side-project addict. Currently, I'm working
+      toward a PhD in CS at Cornell University. I make robots do interesting
+      things.
+    </p>
   </div>
 
   <nav class="sidebar-nav">
@@ -18,14 +22,14 @@
 
     {{ $thisperma := .Permalink }}
     {{ range .Site.Pages.ByWeight }}
-      {{ if isset .Params "sidebar" }}
-        <a class="sidebar-nav-item {{ if eq .Permalink $thisperma }} active {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a>
-      {{ end }}
+    {{ if isset .Params "sidebar" }}
+    <a class="sidebar-nav-item {{ if eq .Permalink $thisperma }} active {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ end }}
     {{ end }}
 
     <span class="sidebar-nav-item"> Themed with <a
           href="https://github.com/tummychow/lanyon-hugo">Lanyon for Hugo</a>,
-          heavily modified</span>
+        heavily modified</span>
   </nav>
 
 </div>
