@@ -1,0 +1,14 @@
+baseurl = "http://wbthomason.co/"
+languageCode = "en-us"
+title = "wil thomason"
+tagline = "foobar"
+theme = "lanyon"
+
+[params]
+  author = "Wil Thomason"
+  title = "wil thomason"
+  tagline = "foobar"
+  Github = "wbthomason"
+  Twitter = "wilthomason"
+  Linkedin = "wbthomason"
+  Email = "wbthomason@{my department, abbr.}.{my university}.edu"

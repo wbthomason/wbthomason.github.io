@@ -1,0 +1,15 @@
+{{ partial "default_head.html" . }}
+{{ range where .Data.Pages "Title" "about" }}
+  {{ .Content }}
+{{ end }}
+
+
+{{ range where .Data.Pages "Title" "links" }}
+  {{ .Content }}
+{{ end }}
+
+{{ range where .Data.Pages "Title" "contact" }}
+  {{ .Content }}
+{{ end }}
+
+{{ partial "default_foot.html" . }}
