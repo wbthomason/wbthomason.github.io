@@ -7,8 +7,6 @@ url = "/contact"
 
 +++
 
-# Contact
-
 I can be contacted through any of the below media, given in no particular order:
 
 * wbthomason ( at ) {my department, abbr.}.{my university}.edu
