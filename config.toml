@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "wil thomason"
 tagline = "foobar"
 theme = "lanyon"
+googleAnalytics = "UA-75724004-1"
 
 [params]
   author = "Wil Thomason"
@@ -13,4 +14,3 @@ theme = "lanyon"
   Linkedin = "wbthomason"
   Email = "wbthomason@{my department, abbr.}.{my university}.edu"
   DateForm = "%M.%D.%Y %hh:%mm:%ss"
-  googleAnalytics = "UA-75724004-1"
