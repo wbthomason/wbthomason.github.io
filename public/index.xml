@@ -1,26 +1,206 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>wil thomason </title>
-    <link>http://wbthomason.co/</link>
+    <title>wil thomason</title>
+    <link>https://wbthomason.github.io/</link>
+    <description>Recent content on wil thomason</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author></author>
-    <rights>(C) 2016</rights>
-    <updated>2016-02-22 00:22:53 -0500 EST</updated>
+    <lastBuildDate>Mon, 22 Feb 2016 00:22:53 -0500</lastBuildDate>
+    <atom:link href="https://wbthomason.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>publications</title>
+      <link>https://wbthomason.github.io/publications</link>
+      <pubDate>Mon, 22 Feb 2016 00:22:53 -0500</pubDate>
+      
+      <guid>https://wbthomason.github.io/publications</guid>
+      <description>
 
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+&lt;h1 id=&#34;publications&#34;&gt;Publications&lt;/h1&gt;
 
+&lt;dl&gt;
+&lt;dt&gt;&amp;ldquo;Zero-Shot Learning for Unfamiliar Gesture Recognition&amp;rdquo;&lt;/dt&gt;
+&lt;dd&gt;Wil Thomason and Ross Knepper.
+Accepted to ISER 2016&lt;/dd&gt;
+&lt;dt&gt;&amp;ldquo;An Accurate Real-Time RFID-Based Location System&amp;rdquo;&lt;/dt&gt;
+&lt;dd&gt;Kirti Chawla, Christopher McFarland, Gabriel Robins, and Wil Thomason.
+Accepted to IJRFITA.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h1 id=&#34;presentations&#34;&gt;Presentations&lt;/h1&gt;
+
+&lt;p&gt;Forthcoming!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>projects</title>
+      <link>https://wbthomason.github.io/projects</link>
+      <pubDate>Mon, 22 Feb 2016 00:22:49 -0500</pubDate>
+      
+      <guid>https://wbthomason.github.io/projects</guid>
+      <description>
+
+&lt;h1 id=&#34;research&#34;&gt;Research&lt;/h1&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/wbthomason/unfamiliar-gestures&#34;&gt;unfamiliar gestures&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;My current research project seeks to create and analyze a framework capable of
+inferring meaning from unfamiliar human gestures. In interactions between
+humans, we frequently assume shared contextual knowledge and common grounding.
+This allows us to make gestures without a guarantee that our conversational
+partners are familiar with them, but maintain a reasonable level of certainty
+that we will be understood. Although this is a desirable ability for human-robot
+interactions, current approaches to understanding gestures, natural language, or
+the fusion thereof, fall short in this area. I hope to solve this problem.&lt;/dd&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/wbthomason/rosbeam&#34;&gt;rosbeam&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;As part of an effort to enable the Beam Remote Presence Device to be usable as
+a platform for robotic development, I updated and improved upon a project to
+reverse engineer the Beam&amp;rsquo;s motor control interface and provide a ROS wrapper.
+Starting from the &lt;a href=&#34;https://github.com/xlz/rosbeam&#34;&gt;prior work&lt;/a&gt;, this entailed a rewriting of the
+primary mechanism used to enable execution of foreign code. The internals of the
+Beam software had changed significantly since the original project was created,
+so the rewriting was a good opportunity to also restructure the code. Doing so
+resulted in a much more future-proof implementation of the original approach.
+The project was fairly short and easy, and is currently being used in the
+experimental verification phase of another research effort into algorithms for
+social navigation.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h1 id=&#34;personal&#34;&gt;Personal&lt;/h1&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/wbthomason/bork&#34;&gt;bork&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;bork stems from a frustration of mine with most package managers. By
+necessity, I use systems running Windows, OS X, and several distros of Linux
+(primarily Arch and Ubuntu). This combination forms an uneven surface of package
+manager capabilities and interfaces. Further, I have yet to find a package
+manager which supports all of my desired use cases natively and easily (though
+Arch&amp;rsquo;s pacman comes closest). This, combined with a desire to use &lt;a href=&#34;https://www.rust-lang.org/&#34;&gt;Rust&lt;/a&gt;
+for a real project, led me to create bork, which I refer to as a &amp;ldquo;package
+manager-manager&amp;rdquo; (i.e. a manager of package managers). It allows for a clean,
+extensible union of arbitrary package sources (whether other managers,
+independent build processes, or otherwise) and provides a fast, uniform
+interface with highly expressive composable commands.&lt;/dd&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/wbthomason/minigrade&#34;&gt;minigrade&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;Minigrade is fundamentally a very powerful, extensible autograding server.
+Created originally for a class I TAed in undergrad, it sought to provide a
+lightweight, secure, and fast server for grading programming assignments by running test
+cases and streaming the results back to the user. In the implementation of the
+test case/evaluation side of things, a fairly powerful mechanism for describing
+partial evaluation states was created and added. I&amp;rsquo;m in the process of rewriting
+Minigrade in &lt;a href=&#34;http://elixir-lang.org&#34;&gt;Elixir&lt;/a&gt; for increased performance and
+robustness.&lt;/dd&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/wbthomason/drunk-uncle&#34;&gt;drunk uncle&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;Drunk Uncle (named for the &lt;a href=&#34;https://www.nbc.com/saturday-night-live/cast/bobby-moynihan-15336/character/drunk-uncle-16241&#34;&gt;Bobby Moynihan character&lt;/a&gt;) is an automated
+argument system. It started as a project at HackDuke, and was rewritten
+afterward for performance and capability. Essentially, given an opinionated
+statement on a subject, Drunk Uncle determines the sentiment and subject of the
+statement and searches the Internet for evidence against the statement. This
+evidence is then presented to the user in an insulting manner. The system is
+only a novelty, and I do not recommend its use by anyone for anything, ever.&lt;/dd&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/wbthomason/ironkernel&#34;&gt;ironkernel&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;IronKernel was one of the first kernels written in Rust, back when the
+language was in version 0.8 or so. Though it&amp;rsquo;s now little more than a curiosity,
+given how fast the language has evolved and the creation of more robust kernels
+and operating systems (such as &lt;a href=&#34;https://github.com/redox-os/redox&#34;&gt;redox&lt;/a&gt;), it
+was a fun project at the time, and achieved a degree of notice in the Rust
+community.&lt;/dd&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/wbthomason/botulism&#34;&gt;botulism&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;In undergrad, I worked as a TA for a class offered both to the open Internet
+and students at my university. We needed an IRC bot for the course to
+communicate with students outside of the university, so, as a simple exercise, I
+wrote botulism - a Python library for IRC bots and a sample bot implemented
+using the library. I&amp;rsquo;m fairly certain that there are more fully-featured, robust
+libraries for this purpose by now, but botulism remains one of the simplest I&amp;rsquo;ve
+seen, and served its purpose well.&lt;/dd&gt;
+&lt;/dl&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>links</title>
+      <link>https://wbthomason.github.io/fixed/links/</link>
+      <pubDate>Mon, 22 Feb 2016 00:22:45 -0500</pubDate>
+      
+      <guid>https://wbthomason.github.io/fixed/links/</guid>
+      <description>&lt;p&gt;This site contains references to my &lt;a href=&#34;https://wbthomason.github.io/assets/W.Thomason_CV.pdf&#34;&gt;CV&lt;/a&gt;, a list of my &lt;a href=&#34;https://wbthomason.github.io/publications&#34;&gt;publications and
+presentations&lt;/a&gt;, descriptions of a selection of my &lt;a href=&#34;https://wbthomason.github.io/projects&#34;&gt;projects&lt;/a&gt;, my
+(infrequently updated) &lt;a href=&#34;https://wbthomason.github.io/blog&#34;&gt;blog&lt;/a&gt;, and my &lt;a href=&#34;https://github.com/wbthomason&#34;&gt;Github profile&lt;/a&gt;. For your
+convenience, these are linked both at the top of the page and in the previous
+sentence.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>contact</title>
+      <link>https://wbthomason.github.io/contact</link>
+      <pubDate>Mon, 22 Feb 2016 00:22:41 -0500</pubDate>
+      
+      <guid>https://wbthomason.github.io/contact</guid>
+      <description>&lt;p&gt;I can be contacted through any of the below media, given in no particular order:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;wbthomason ( at ) {my department, abbr.}.{my university}.edu&lt;/li&gt;
+&lt;li&gt;{firstname}.{lastname}@{Google&amp;rsquo;s mail service}&lt;/li&gt;
+&lt;li&gt;Twitter: &lt;a href=&#34;https://twitter.com/wilthomason&#34;&gt;@wilthomason&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/wbthomason&#34;&gt;wbthomason&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Skype: Request via email&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>https://wbthomason.github.io/about</link>
+      <pubDate>Mon, 22 Feb 2016 00:22:20 -0500</pubDate>
+      
+      <guid>https://wbthomason.github.io/about</guid>
+      <description>
+&lt;figure class=&#34;about-photo&#34;&gt;
+    
+        &lt;img src=&#34;https://wbthomason.github.io/media/about-photo.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;I&amp;rsquo;m Wil Thomason, a first-year PhD student in computer science at Cornell.  My
+primary research interests are in robotics, though I&amp;rsquo;m also interested in
+programming languages, algorithms, machine learning, and interdisciplinary
+efforts among these areas.&lt;/p&gt;
+
+&lt;p&gt;In particular, I&amp;rsquo;m interested in algorithms for efficient cooperation in
+heterogenous multi-agent scenarios. I want teams of humans and arbitrary
+robotic systems to be able to work together in a manner which both &amp;ldquo;feels&amp;rdquo;
+natural (i.e.  equivalent to or better than working with a team of humans
+alone) and is efficient and effective (i.e. utilizes differences in
+capabilities between the agents well, eliminates redundant work, allows for the
+accomplishment of tasks flexibly and quickly, etc.)&lt;/p&gt;
+
+&lt;p&gt;Currently, I work with &lt;a href=&#34;http://www.cs.cornell.edu/~rak/&#34;&gt;Professor Ross Knepper&lt;/a&gt; on projects related to
+gestural understanding and multi-agent planning.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wbthomason.github.io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wbthomason.github.io/</guid>
+      <description>&lt;div class=&#34;home&#34;&gt;
+
+  &lt;ul class=&#34;post-list&#34;&gt;
+    &lt;li&gt;{% render about.md %}&lt;/li&gt;
+    &lt;li&gt;{% render links.md %}&lt;/li&gt;
+    &lt;li&gt;{% render contact.md %}&lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
