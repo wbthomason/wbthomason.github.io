@@ -19,4 +19,6 @@ Accepted to IJRFITA.
 
 # Presentations
 
-Forthcoming!
+"Recognizing Unfamiliar Gestures for Human-Robot Interaction through Zero-Shot Learning"
+: Wil Thomason.
+Given at RSS 2016 in the 2nd Workshop on [Model Learning for Human-Robot Communication][http://www.ece.rochester.edu/projects/rail/mlhrc2016/]

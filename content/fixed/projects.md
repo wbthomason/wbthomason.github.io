@@ -17,7 +17,9 @@ This allows us to make gestures without a guarantee that our conversational
 partners are familiar with them, but maintain a reasonable level of certainty
 that we will be understood. Although this is a desirable ability for human-robot
 interactions, current approaches to understanding gestures, natural language, or
-the fusion thereof, fall short in this area. I hope to solve this problem.
+the fusion thereof, fall short in this area. By applying techniques from
+zero-shot learning to a novel frequency-domain gestural feature description, we
+have achieved some success at solving this problem. This project is ongoing.
 
 [rosbeam][rosb]
 : As part of an effort to enable the Beam Remote Presence Device to be usable as
@@ -32,31 +34,23 @@ The project was fairly short and easy, and is currently being used in the
 experimental verification phase of another research effort into algorithms for
 social navigation.
 
-[rosb]: https://github.com/wbthomason/rosbeam
+[rosb]: https://github.com/cornell-rpal/rosbeam
 [xlzrosb]: https://github.com/xlz/rosbeam
-[unf]: https://github.com/wbthomason/unfamiliar-gestures
+[unf]: https://github.com/cornell-rpal/unfamiliar-gestures
 
 # Personal
 
 [bork][bork]
-: bork stems from a frustration of mine with most package managers. By
-necessity, I use systems running Windows, OS X, and several distros of Linux
-(primarily Arch and Ubuntu). This combination forms an uneven surface of package
-manager capabilities and interfaces. Further, I have yet to find a package
-manager which supports all of my desired use cases natively and easily (though
-Arch's pacman comes closest). This, combined with a desire to use [Rust][rustl]
-for a real project, led me to create bork, which I refer to as a "package
-manager-manager" (i.e. a manager of package managers). It allows for a clean,
-extensible union of arbitrary package sources (whether other managers,
-independent build processes, or otherwise) and provides a fast, uniform
-interface with highly expressive composable commands.
+: bork has gone through a number of iterations of purpose, but is currently
+targeted at being a robust, fast, and easy to use AUR helper. More to come as I
+continue to work on the project.
 
 [minigrade][minigrade]
-: Minigrade is fundamentally a very powerful, extensible autograding server.
-Created originally for a class I TAed in undergrad, it sought to provide a
-lightweight, secure, and fast server for grading programming assignments by running test
+: Minigrade is fundamentally a powerful, extensible autograding server. Created
+originally for a class I TAed in undergrad, it sought to provide a lightweight,
+secure, and fast server for grading programming assignments by running test
 cases and streaming the results back to the user. In the implementation of the
-test case/evaluation side of things, a fairly powerful mechanism for describing
+test case/evaluation side of things, an interesting mechanism for describing
 partial evaluation states was created and added. I'm in the process of rewriting
 Minigrade in [Elixir](http://elixir-lang.org) for increased performance and
 robustness.
@@ -70,7 +64,6 @@ statement and searches the Internet for evidence against the statement. This
 evidence is then presented to the user in an insulting manner. The system is
 only a novelty, and I do not recommend its use by anyone for anything, ever.
  
-
 [ironkernel][ik]
 : IronKernel was one of the first kernels written in Rust, back when the
 language was in version 0.8 or so. Though it's now little more than a curiosity,
