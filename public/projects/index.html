@@ -117,7 +117,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <h1 id="research">Research</h1>
 
 <dl>
-<dt><a href="https://github.com/wbthomason/unfamiliar-gestures">unfamiliar gestures</a></dt>
+<dt><a href="https://github.com/cornell-rpal/unfamiliar-gestures">unfamiliar gestures</a></dt>
 <dd>My current research project seeks to create and analyze a framework capable of
 inferring meaning from unfamiliar human gestures. In interactions between
 humans, we frequently assume shared contextual knowledge and common grounding.
@@ -125,8 +125,10 @@ This allows us to make gestures without a guarantee that our conversational
 partners are familiar with them, but maintain a reasonable level of certainty
 that we will be understood. Although this is a desirable ability for human-robot
 interactions, current approaches to understanding gestures, natural language, or
-the fusion thereof, fall short in this area. I hope to solve this problem.</dd>
-<dt><a href="https://github.com/wbthomason/rosbeam">rosbeam</a></dt>
+the fusion thereof, fall short in this area. By applying techniques from
+zero-shot learning to a novel frequency-domain gestural feature description, we
+have achieved some success at solving this problem. This project is ongoing.</dd>
+<dt><a href="https://github.com/cornell-rpal/rosbeam">rosbeam</a></dt>
 <dd>As part of an effort to enable the Beam Remote Presence Device to be usable as
 a platform for robotic development, I updated and improved upon a project to
 reverse engineer the Beam&rsquo;s motor control interface and provide a ROS wrapper.
@@ -144,23 +146,15 @@ social navigation.</dd>
 
 <dl>
 <dt><a href="https://github.com/wbthomason/bork">bork</a></dt>
-<dd>bork stems from a frustration of mine with most package managers. By
-necessity, I use systems running Windows, OS X, and several distros of Linux
-(primarily Arch and Ubuntu). This combination forms an uneven surface of package
-manager capabilities and interfaces. Further, I have yet to find a package
-manager which supports all of my desired use cases natively and easily (though
-Arch&rsquo;s pacman comes closest). This, combined with a desire to use <a href="https://www.rust-lang.org/">Rust</a>
-for a real project, led me to create bork, which I refer to as a &ldquo;package
-manager-manager&rdquo; (i.e. a manager of package managers). It allows for a clean,
-extensible union of arbitrary package sources (whether other managers,
-independent build processes, or otherwise) and provides a fast, uniform
-interface with highly expressive composable commands.</dd>
+<dd>bork has gone through a number of iterations of purpose, but is currently
+targeted at being a robust, fast, and easy to use AUR helper. More to come as I
+continue to work on the project.</dd>
 <dt><a href="https://github.com/wbthomason/minigrade">minigrade</a></dt>
-<dd>Minigrade is fundamentally a very powerful, extensible autograding server.
-Created originally for a class I TAed in undergrad, it sought to provide a
-lightweight, secure, and fast server for grading programming assignments by running test
+<dd>Minigrade is fundamentally a powerful, extensible autograding server. Created
+originally for a class I TAed in undergrad, it sought to provide a lightweight,
+secure, and fast server for grading programming assignments by running test
 cases and streaming the results back to the user. In the implementation of the
-test case/evaluation side of things, a fairly powerful mechanism for describing
+test case/evaluation side of things, an interesting mechanism for describing
 partial evaluation states was created and added. I&rsquo;m in the process of rewriting
 Minigrade in <a href="http://elixir-lang.org">Elixir</a> for increased performance and
 robustness.</dd>
