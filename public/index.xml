@@ -30,7 +30,11 @@ Accepted to IJRFITA.&lt;/dd&gt;
 
 &lt;h1 id=&#34;presentations&#34;&gt;Presentations&lt;/h1&gt;
 
-&lt;p&gt;Forthcoming!&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;&amp;ldquo;Recognizing Unfamiliar Gestures for Human-Robot Interaction through Zero-Shot Learning&amp;rdquo;&lt;/dt&gt;
+&lt;dd&gt;Wil Thomason.
+Given at RSS 2016 in the 2nd Workshop on [Model Learning for Human-Robot Communication][&lt;a href=&#34;http://www.ece.rochester.edu/projects/rail/mlhrc2016/&#34;&gt;http://www.ece.rochester.edu/projects/rail/mlhrc2016/&lt;/a&gt;]&lt;/dd&gt;
+&lt;/dl&gt;
 </description>
     </item>
     
@@ -45,7 +49,7 @@ Accepted to IJRFITA.&lt;/dd&gt;
 &lt;h1 id=&#34;research&#34;&gt;Research&lt;/h1&gt;
 
 &lt;dl&gt;
-&lt;dt&gt;&lt;a href=&#34;https://github.com/wbthomason/unfamiliar-gestures&#34;&gt;unfamiliar gestures&lt;/a&gt;&lt;/dt&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/cornell-rpal/unfamiliar-gestures&#34;&gt;unfamiliar gestures&lt;/a&gt;&lt;/dt&gt;
 &lt;dd&gt;My current research project seeks to create and analyze a framework capable of
 inferring meaning from unfamiliar human gestures. In interactions between
 humans, we frequently assume shared contextual knowledge and common grounding.
@@ -53,8 +57,10 @@ This allows us to make gestures without a guarantee that our conversational
 partners are familiar with them, but maintain a reasonable level of certainty
 that we will be understood. Although this is a desirable ability for human-robot
 interactions, current approaches to understanding gestures, natural language, or
-the fusion thereof, fall short in this area. I hope to solve this problem.&lt;/dd&gt;
-&lt;dt&gt;&lt;a href=&#34;https://github.com/wbthomason/rosbeam&#34;&gt;rosbeam&lt;/a&gt;&lt;/dt&gt;
+the fusion thereof, fall short in this area. By applying techniques from
+zero-shot learning to a novel frequency-domain gestural feature description, we
+have achieved some success at solving this problem. This project is ongoing.&lt;/dd&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/cornell-rpal/rosbeam&#34;&gt;rosbeam&lt;/a&gt;&lt;/dt&gt;
 &lt;dd&gt;As part of an effort to enable the Beam Remote Presence Device to be usable as
 a platform for robotic development, I updated and improved upon a project to
 reverse engineer the Beam&amp;rsquo;s motor control interface and provide a ROS wrapper.
@@ -72,23 +78,15 @@ social navigation.&lt;/dd&gt;
 
 &lt;dl&gt;
 &lt;dt&gt;&lt;a href=&#34;https://github.com/wbthomason/bork&#34;&gt;bork&lt;/a&gt;&lt;/dt&gt;
-&lt;dd&gt;bork stems from a frustration of mine with most package managers. By
-necessity, I use systems running Windows, OS X, and several distros of Linux
-(primarily Arch and Ubuntu). This combination forms an uneven surface of package
-manager capabilities and interfaces. Further, I have yet to find a package
-manager which supports all of my desired use cases natively and easily (though
-Arch&amp;rsquo;s pacman comes closest). This, combined with a desire to use &lt;a href=&#34;https://www.rust-lang.org/&#34;&gt;Rust&lt;/a&gt;
-for a real project, led me to create bork, which I refer to as a &amp;ldquo;package
-manager-manager&amp;rdquo; (i.e. a manager of package managers). It allows for a clean,
-extensible union of arbitrary package sources (whether other managers,
-independent build processes, or otherwise) and provides a fast, uniform
-interface with highly expressive composable commands.&lt;/dd&gt;
+&lt;dd&gt;bork has gone through a number of iterations of purpose, but is currently
+targeted at being a robust, fast, and easy to use AUR helper. More to come as I
+continue to work on the project.&lt;/dd&gt;
 &lt;dt&gt;&lt;a href=&#34;https://github.com/wbthomason/minigrade&#34;&gt;minigrade&lt;/a&gt;&lt;/dt&gt;
-&lt;dd&gt;Minigrade is fundamentally a very powerful, extensible autograding server.
-Created originally for a class I TAed in undergrad, it sought to provide a
-lightweight, secure, and fast server for grading programming assignments by running test
+&lt;dd&gt;Minigrade is fundamentally a powerful, extensible autograding server. Created
+originally for a class I TAed in undergrad, it sought to provide a lightweight,
+secure, and fast server for grading programming assignments by running test
 cases and streaming the results back to the user. In the implementation of the
-test case/evaluation side of things, a fairly powerful mechanism for describing
+test case/evaluation side of things, an interesting mechanism for describing
 partial evaluation states was created and added. I&amp;rsquo;m in the process of rewriting
 Minigrade in &lt;a href=&#34;http://elixir-lang.org&#34;&gt;Elixir&lt;/a&gt; for increased performance and
 robustness.&lt;/dd&gt;
@@ -164,13 +162,13 @@ presentations&lt;/a&gt;, descriptions of a selection of my &lt;a href=&#34;https
 &lt;/figure&gt;
 
 
-&lt;p&gt;I&amp;rsquo;m Wil Thomason, a first-year PhD student in computer science at Cornell.  My
+&lt;p&gt;I&amp;rsquo;m Wil Thomason, a second-year PhD student in computer science at Cornell.  My
 primary research interests are in robotics, though I&amp;rsquo;m also interested in
 programming languages, algorithms, machine learning, and interdisciplinary
 efforts among these areas.&lt;/p&gt;
 
 &lt;p&gt;In particular, I&amp;rsquo;m interested in algorithms for efficient cooperation in
-heterogenous multi-agent scenarios. I want teams of humans and arbitrary
+heterogeneous multi-agent scenarios. I want teams of humans and arbitrary
 robotic systems to be able to work together in a manner which both &amp;ldquo;feels&amp;rdquo;
 natural (i.e.  equivalent to or better than working with a team of humans
 alone) and is efficient and effective (i.e. utilizes differences in
@@ -178,7 +176,7 @@ capabilities between the agents well, eliminates redundant work, allows for the
 accomplishment of tasks flexibly and quickly, etc.)&lt;/p&gt;
 
 &lt;p&gt;Currently, I work with &lt;a href=&#34;http://www.cs.cornell.edu/~rak/&#34;&gt;Professor Ross Knepper&lt;/a&gt; on projects related to
-gestural understanding and multi-agent planning.&lt;/p&gt;
+situated gestural understanding and multi-agent planning.&lt;/p&gt;
 </description>
     </item>
     
