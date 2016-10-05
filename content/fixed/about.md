@@ -23,6 +23,6 @@ capabilities between the agents well, eliminates redundant work, allows for the
 accomplishment of tasks flexibly and quickly, etc.)
 
 Currently, I work with [Professor Ross Knepper][rak] on projects related to
-situated gestural understanding and multi-agent planning.
+situated gestural understanding, contextual language understanding, and multi-agent planning.
 
 [rak]: http://www.cs.cornell.edu/~rak/
