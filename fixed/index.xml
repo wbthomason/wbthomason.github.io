@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fixed-rsses on wil thomason</title>
+    <title>Fixeds on wil thomason</title>
     <link>https://wbthomason.github.io/fixed/index.xml</link>
-    <description>Recent content in Fixed-rsses on wil thomason</description>
+    <description>Recent content in Fixeds on wil thomason</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Feb 2016 00:22:53 -0500</lastBuildDate>
@@ -20,13 +20,16 @@
 &lt;h1 id=&#34;publications&#34;&gt;Publications&lt;/h1&gt;
 
 &lt;dl&gt;
-&lt;dt&gt;&amp;ldquo;Zero-Shot Learning for Unfamiliar Gesture Recognition&amp;rdquo;&lt;/dt&gt;
+&lt;dt&gt;Recognition&amp;rdquo;](//papers/iser2016_unfamiliargestures.pdf)&lt;/dt&gt;
 &lt;dd&gt;Wil Thomason and Ross Knepper.
 Accepted to and presented at ISER 2016&lt;/dd&gt;
 &lt;dt&gt;&amp;ldquo;An Accurate Real-Time RFID-Based Location System&amp;rdquo;&lt;/dt&gt;
 &lt;dd&gt;Kirti Chawla, Christopher McFarland, Gabriel Robins, and Wil Thomason.
 Accepted to IJRFITA.&lt;/dd&gt;
 &lt;/dl&gt;
+
+&lt;p&gt;ns, and Wil Thomason.
+Accepted to IJRFITA.&lt;/p&gt;
 
 &lt;h1 id=&#34;presentations&#34;&gt;Presentations&lt;/h1&gt;
 
