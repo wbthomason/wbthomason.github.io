@@ -1,14 +1,13 @@
 baseurl = "https://wbthomason.github.io/"
 languageCode = "en-us"
 title = "wil thomason"
-tagline = "foobar"
 theme = "lanyon"
 googleAnalytics = "UA-75724004-1"
+canonifyURLs = true
 
 [params]
   author = "Wil Thomason"
   title = "wil thomason"
-  tagline = "foobar"
   Github = "wbthomason"
   Twitter = "wilthomason"
   Linkedin = "wbthomason"

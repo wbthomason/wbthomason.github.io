@@ -12,5 +12,5 @@ presentations][pubs], descriptions of a selection of my [projects][proj], my
 [cv]: /assets/W.Thomason_CV.pdf
 [pubs]: /publications
 [proj]: /projects
-[blog]: /blog
+[blog]: https://wbthomason.github.io/blog
 [git]: https://github.com/wbthomason
