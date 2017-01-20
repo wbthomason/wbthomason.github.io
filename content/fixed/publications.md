@@ -9,8 +9,7 @@ url = "/publications"
 
 # Publications
 
-["Zero-Shot Learning for Unfamiliar Gesture
-Recognition"](//papers/iser2016_unfamiliargestures.pdf)
+["Zero-Shot Learning for Unfamiliar Gesture Recognition"](/papers/iser2016_unfamiliargestures.pdf)
 : Wil Thomason and Ross Knepper.
 Accepted to and presented at ISER 2016
 
