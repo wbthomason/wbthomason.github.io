@@ -9,14 +9,14 @@ url = "/about"
 
 {{< figure src = "/media/about-photo.jpg" class = "about-photo" >}}
 
-I'm Wil Thomason, a second-year PhD student in computer science at Cornell.  My
-primary research interests are in robotics, though I'm also interested in
+I'm Wil Thomason, a second-year PhD student in computer science at Cornell. My
+primary research interests are in **robotics**, though I'm also interested in
 programming languages, algorithms, machine learning, and interdisciplinary
 efforts among these areas.
 
-In particular, I'm interested in algorithms for efficient cooperation in
-heterogeneous multi-agent scenarios. I want teams of humans and arbitrary
-robotic systems to be able to work together in a manner which both "feels"
+I'm interested in algorithms for efficient cooperation in
+heterogeneous multi-agent scenarios - in particular, for ad hoc teams. I want teams of humans and 
+arbitrary robotic systems to be able to work together in a manner which both "feels"
 natural (i.e.  equivalent to or better than working with a team of humans
 alone) and is efficient and effective (i.e. utilizes differences in
 capabilities between the agents well, eliminates redundant work, allows for the
