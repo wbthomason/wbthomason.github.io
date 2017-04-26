@@ -5,6 +5,8 @@ title = "links"
 
 +++
 
+# Links
+
 This site contains references to my [CV][cv], a list of my [publications and
 presentations][pubs], descriptions of a selection of my [projects][proj], my
 (infrequently updated) [blog][blog], and my [Github profile][git]. 

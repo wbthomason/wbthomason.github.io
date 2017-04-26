@@ -14,18 +14,57 @@ primary research interests are in **robotics**, though I'm also interested in
 programming languages, algorithms, machine learning, and interdisciplinary
 efforts among these areas.
 
+# Research
+
 I'm interested in algorithms for efficient cooperation in
 heterogeneous multi-agent scenarios - in particular, for ad hoc teams. I want teams of humans and 
 arbitrary robotic systems to be able to work together in a manner which both "feels"
-natural (i.e.  equivalent to or better than working with a team of humans
-alone) and is efficient and effective (i.e. utilizes differences in
-capabilities between the agents well, eliminates redundant work, allows for the
-accomplishment of tasks flexibly and quickly, etc.)
+natural and is efficient and effective.
 
 Currently, I work with [Professor Ross Knepper][rak] on projects related to
 situated gestural understanding, contextual language understanding, and multi-agent planning.
 
 [rak]: http://www.cs.cornell.edu/~rak/
 
-I am grateful to be funded by the **[NDSEG Fellowship](https://ndseg.asee.org/)** and to have also 
-been awarded a **[NSF GRFP Fellowship](https://www.nsfgrfp.org/)** in 2017.
+For more about my research, please see [my publication and presentation list](pubs).
+
+[pubs]: /publications
+
+# News
+
+- I was awarded the [NDSEG Fellowship](https://ndseg.asee.org/) (April 2017)
+- I was awarded the [NSF GRFP Fellowship](https://www.nsfgrfp.org/) (March 2017)
+- I presented my paper ["Zero-Shot Learning for Unfamiliar Gesture 
+  Recognition”](https://wbthomason.github.io/papers/iser2016_unfamiliargestures.pdf) at ISER 2016 
+  (October 2016)
+- I presented my workshop paper [“Recognizing Unfamiliar Gestures for Human-Robot Interaction 
+  through Zero-Shot 
+  Learning”](http://www.ece.rochester.edu/projects/rail/mlhrc2016/papers/mlhrc-rss16-thomason.pdf) 
+  at RSS 2016 in the [2nd Workshop on Model Learning for Human-Robot 
+  Communication](http://www.ece.rochester.edu/projects/rail/mlhrc2016/) (June 2016)
+- My paper ["Zero-Shot Learning for Unfamiliar Gesture 
+  Recognition”](https://wbthomason.github.io/papers/iser2016_unfamiliargestures.pdf) was accepted to 
+  ISER 2016 (May 2016)
+
+# Teaching
+
+- TA for [Foundations of Robotics](https://www.cs.cornell.edu/courses/cs4750/2016fa/), Cornell 
+  University, Professor Ross Knepper (Fall 2016)
+- Head TA for [Introduction to Computing Using 
+  Python](https://www.cs.cornell.edu/courses/cs1110/2015fa/), Cornell University, Professor Walker 
+  White (Fall 2015)
+- TA for a multitude of undergraduate courses at UVa {[Program and Data 
+  Representation](https://aaronbloomfield.github.io/pdr/README.html), [Operating 
+  Systems](http://www.rust-class.org/), Artificial Intelligence, [Programming 
+  Languages](https://www.cs.virginia.edu/~weimer/2015-4610/)} (Fall 2013 to Spring 2015)
+
+# Outreach
+
+-   I have taught 7th and 8th grade girls about state machines and programming at Cornell's
+    [Expanding your Horizons](https://www.eyh.cornell.edu/) conference (Spring 2016 and Spring 2017)
+
+
+# Departmental Service
+
+- I help run the [CS department colloquium](https://www.cs.cornell.edu/events/colloquium) talks
+- I coordinate the Cornell CS PhD Mentor program
