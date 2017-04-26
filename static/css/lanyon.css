@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 56rem) {
   .container {
-    max-width: 52rem;
+    max-width: 80rem;
   }
 }
 
@@ -624,6 +624,12 @@ a.pagination-item:hover {
 
 .about-photo {
   float: right;
+}
+
+@media (min-width: 38rem) {
+  .about-photo {
+    clear: both;
+  }
 }
 
 .sidebar-photo {
