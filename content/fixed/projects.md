@@ -40,6 +40,9 @@ social navigation.
 
 # Personal
 
+I work on a large number of personal side projects. The best/most up to date list can be found at 
+[my Github profile](https://github.com/wbthomason). I have highlighted a few projects below.
+
 [bork][bork]
 : bork has gone through a number of iterations of purpose, but is currently
 targeted at being a robust, fast, and easy to use AUR helper. More to come as I

@@ -26,3 +26,6 @@ Currently, I work with [Professor Ross Knepper][rak] on projects related to
 situated gestural understanding, contextual language understanding, and multi-agent planning.
 
 [rak]: http://www.cs.cornell.edu/~rak/
+
+I am grateful to be funded by the **[NDSEG Fellowship](https://ndseg.asee.org/)** and to have also 
+been awarded a **[NSF GRFP Fellowship](https://www.nsfgrfp.org/)** in 2017.
