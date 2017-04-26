@@ -2,53 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wbthomason.github.io/publications/</loc>
+    <loc>https://www.cs.cornell.edu/~wil/publications/</loc>
     <lastmod>2016-02-22T00:22:53-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wbthomason.github.io/projects/</loc>
+    <loc>https://www.cs.cornell.edu/~wil/projects/</loc>
     <lastmod>2016-02-22T00:22:49-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wbthomason.github.io/fixed/links/</loc>
+    <loc>https://www.cs.cornell.edu/~wil/fixed/links/</loc>
     <lastmod>2016-02-22T00:22:45-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wbthomason.github.io/contact/</loc>
+    <loc>https://www.cs.cornell.edu/~wil/contact/</loc>
     <lastmod>2016-02-22T00:22:41-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wbthomason.github.io/about/</loc>
+    <loc>https://www.cs.cornell.edu/~wil/about/</loc>
     <lastmod>2016-02-22T00:22:20-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wbthomason.github.io/index/</loc>
+    <loc>https://www.cs.cornell.edu/~wil/</loc>
+    <lastmod>2016-02-22T00:22:53-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wbthomason.github.io/categories/</loc>
+    <loc>https://www.cs.cornell.edu/~wil/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wbthomason.github.io/fixed/</loc>
+    <loc>https://www.cs.cornell.edu/~wil/fixed/</loc>
     <lastmod>2016-02-22T00:22:53-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wbthomason.github.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wbthomason.github.io/</loc>
-    <lastmod>2016-02-22T00:22:53-05:00</lastmod>
+    <loc>https://www.cs.cornell.edu/~wil/tags/</loc>
     <priority>0</priority>
   </url>
   
