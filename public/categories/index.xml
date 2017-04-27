@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on wil thomason</title>
-    <link>https://www.cs.cornell.edu/~wil/categories/</link>
+    <link>https://wbthomason.github.io/categories/</link>
     <description>Recent content in Categories on wil thomason</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://www.cs.cornell.edu/~wil/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wbthomason.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
