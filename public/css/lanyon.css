@@ -626,9 +626,12 @@ a.pagination-item:hover {
   float: right;
 }
 
-@media (min-width: 38rem) {
+@media (max-width: 38rem) {
   .about-photo {
-    clear: both;
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
