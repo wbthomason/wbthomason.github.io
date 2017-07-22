@@ -26,12 +26,16 @@ situated gestural understanding, contextual language understanding, and multi-ag
 
 [rak]: http://www.cs.cornell.edu/~rak/
 
-For more about my research, please see [my publication and presentation list](pubs).
+For more about my research, please see my [publication and presentation][pubs] list.
 
 [pubs]: /publications
 
 # News
 
+- I presented my workshop paper [“Exploiting Heterogeneity in Robot Teams Through a Formalism of 
+  Capabilities”](https://www.seas.upenn.edu/~prorok/rss2017/papers/Thomason_RSS-Workshop_ExtAbstract.pdf) 
+  at RSS 2017 in the workshop on [Heterogeneity and Diversity for Resilience
+in Multi-Robot Systems](https://www.seas.upenn.edu/~prorok/rss2017/) (July 2017)
 - I was awarded the [NDSEG Fellowship](https://ndseg.asee.org/) (April 2017)
 - I was awarded the [NSF GRFP Fellowship](https://www.nsfgrfp.org/) (March 2017)
 - I presented my paper ["Zero-Shot Learning for Unfamiliar Gesture 
