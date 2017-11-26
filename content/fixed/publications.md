@@ -19,8 +19,12 @@ url = "/publications"
 
 # Publications
 
+"Social Momentum: A Framework for Legible Navigation in Dynamic Multi-Agent Environments"
+: Christoforos Mavrogiannis, **Wil Thomason**, and Ross Knepper.
+Accepted to HRI 2018
+
 ["Zero-Shot Learning for Unfamiliar Gesture Recognition"](/papers/iser2016_unfamiliargestures.pdf)
-: Wil Thomason and Ross Knepper.
+: **Wil Thomason** and Ross Knepper.
 Accepted to ISER 2016
 
 "An Accurate Real-Time RFID-Based Location System"
