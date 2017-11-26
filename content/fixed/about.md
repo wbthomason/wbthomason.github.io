@@ -32,6 +32,9 @@ For more about my research, please see my [publication and presentation][pubs] l
 
 # News
 
+- My paper with Christoforos Mavrogiannis and Ross Knepper, "Social Momentum: A Framework for 
+  Legible Navigation in Dynamic Multi-Agent Environments", was accepted to HRI 2018 (November 
+  2017)
 - I presented my workshop paper [“Exploiting Heterogeneity in Robot Teams Through a Formalism of 
   Capabilities”](https://www.seas.upenn.edu/~prorok/rss2017/papers/Thomason_RSS-Workshop_ExtAbstract.pdf) 
   at RSS 2017 in the workshop on [Heterogeneity and Diversity for Resilience
