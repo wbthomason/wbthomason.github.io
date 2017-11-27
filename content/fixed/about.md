@@ -9,7 +9,7 @@ url = "/about"
 
 {{< figure src = "/media/about-photo.jpg" class = "about-photo" >}}
 
-I'm Wil Thomason, a second-year PhD student in computer science at Cornell. My
+I'm Wil Thomason, a third-year PhD student in computer science at Cornell. My
 primary research interests are in **robotics**, though I'm also interested in
 programming languages, algorithms, machine learning, and interdisciplinary
 efforts among these areas.
