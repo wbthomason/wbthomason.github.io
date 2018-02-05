@@ -46,7 +46,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Raleway, "PT Sans", Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
   color: #505050;
-  font-size: 5em;
+  font-size: 3.5em;
   display: flex;
   justify-content: center;
   align-items: center;
