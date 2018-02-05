@@ -9,17 +9,22 @@ url = "/about"
 
 {{< figure src = "/media/about-photo.jpg" class = "about-photo" >}}
 
-I'm Wil Thomason, a third-year PhD student in computer science at Cornell. My
-primary research interests are in **robotics**, though I'm also interested in
-programming languages, algorithms, machine learning, and interdisciplinary
-efforts among these areas.
+I'm Wil Thomason, a third-year PhD student in computer science at Cornell. My primary research
+interests are in **robotics**, though I'm also interested in machine learning, programming
+languages, algorithms, and interdisciplinary efforts among these areas.
 
 # Research
 
-I'm interested in algorithms for efficient cooperation in
-heterogeneous multi-agent scenarios - in particular, for ad hoc teams. I want teams of humans and 
-arbitrary robotic systems to be able to work together in a manner which both "feels"
-natural and is efficient and effective.
+I'm interested in **planning**, particularly in **integrated task and motion planning** and
+**multi-robot collaboration**.
+
+In task and motion planning, I'm interested in exploring tighter integration between existing
+planners to eliminate backtracking and replanning. I'm also interested in combining traditional
+planners with machine learning approaches for skill transfer and adaptation.
+
+I'm interested in algorithms for efficient cooperation in heterogeneous multi-robot teams --- in
+particular, for ad hoc teams. I want teams of humans and arbitrary robotic systems to be able to
+work together in a manner which both "feels" natural and is efficient and effective.
 
 Currently, I work with [Professor Ross Knepper][rak] on projects related to
 situated gestural understanding, contextual language understanding, and multi-agent planning.
@@ -55,8 +60,8 @@ in Multi-Robot Systems](https://www.seas.upenn.edu/~prorok/rss2017/) (July 2017)
 
 # Teaching
 
-- TA for [Foundations of Robotics](https://www.cs.cornell.edu/courses/cs4750/2016fa/), Cornell 
-  University, Professor Ross Knepper (Fall 2016)
+- TA for [Foundations of Robotics](https://www.cs.cornell.edu/courses/cs4750/2017fa/), Cornell 
+  University, Professor Ross Knepper (Fall 2016 and Fall 2017)
 - Head TA for [Introduction to Computing Using 
   Python](https://www.cs.cornell.edu/courses/cs1110/2015fa/), Cornell University, Professor Walker 
   White (Fall 2015)
@@ -68,7 +73,7 @@ in Multi-Robot Systems](https://www.seas.upenn.edu/~prorok/rss2017/) (July 2017)
 # Outreach
 
 -   I have taught 7th and 8th grade girls about state machines and programming at Cornell's
-    [Expanding your Horizons](https://www.eyh.cornell.edu/) conference (Spring 2016 and Spring 2017)
+    [Expanding your Horizons](https://www.eyh.cornell.edu/) conference (Spring 2016, 2017, and 2018)
 
 
 # Departmental Service

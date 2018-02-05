@@ -10,28 +10,24 @@ url = "/projects"
 # Research
 
 [unfamiliar gestures][unf]
-: My current research project seeks to create and analyze a framework capable of
-inferring meaning from unfamiliar human gestures. In interactions between
-humans, we frequently assume shared contextual knowledge and common grounding.
-This allows us to make gestures without a guarantee that our conversational
-partners are familiar with them, but maintain a reasonable level of certainty
-that we will be understood. Although this is a desirable ability for human-robot
-interactions, current approaches to understanding gestures, natural language, or
-the fusion thereof, fall short in this area. By applying techniques from
-zero-shot learning to a novel frequency-domain gestural feature description, we
-have achieved some success at solving this problem. This project is ongoing.
+: In 2016, I created a framework capable of inferring meaning from unfamiliar human gestures. In
+interactions between humans, we frequently assume shared contextual knowledge and common grounding.
+This allows us to make gestures without a guarantee that our conversational partners are familiar
+with them, but maintain a reasonable level of certainty that we will be understood. Although this is
+a desirable ability for human-robot interactions, current approaches to understanding gestures,
+natural language, or the fusion thereof, fall short in this area. By applying techniques from
+zero-shot learning to a novel frequency-domain gestural feature description, we have achieved some
+success at solving this problem.
 
 [rosbeam][rosb]
-: As part of an effort to enable the Beam Remote Presence Device to be usable as
-a platform for robotic development, I updated and improved upon a project to
-reverse engineer the Beam's motor control interface and provide a ROS wrapper.
-Starting from the [prior work][xlzrosb], this entailed a rewriting of the
-primary mechanism used to enable execution of foreign code. The internals of the
-Beam software had changed significantly since the original project was created,
-so the rewriting was a good opportunity to also restructure the code. Doing so
-resulted in a much more future-proof implementation of the original approach.
-The project was fairly short and easy, and is currently being used in the
-experimental verification phase of another research effort into algorithms for
+: As part of an effort to enable the Beam Remote Presence Device to be usable as a platform for
+robotic development, I updated and improved upon a project to reverse engineer the Beam's motor
+control interface and provide a ROS wrapper.  Starting from the [prior work][xlzrosb], this entailed
+a rewriting of the primary mechanism used to enable execution of foreign code. The internals of the
+Beam software had changed significantly since the original project was created, so the rewriting was
+a good opportunity to also restructure the code. Doing so resulted in a much more future-proof
+implementation of the original approach.  The project was fairly short and easy, and is currently
+being used in the experimental verification phase of another research effort into algorithms for
 social navigation.
 
 [rosb]: https://github.com/cornell-rpal/rosbeam
