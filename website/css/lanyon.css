@@ -622,13 +622,13 @@ a.pagination-item:hover {
   color: #8f5536;
 }
 
+.about-photo {
+  float: right;
+}
+
 .about-photo > img {
   width: 15em;
   height: 15em;
-}
-
-.about-photo {
-  float: right;
 }
 
 @media (max-width: 38rem) {
