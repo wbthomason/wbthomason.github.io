@@ -7,6 +7,7 @@ import Hakyll
 import System.FilePath.Posix ((</>), takeBaseName, takeDirectory, takeFileName)
 
 --------------------------------------------------------------------------------
+-- Routes
 -- Taken from https://www.rohanjain.in/hakyll-clean-urls/
 cleanRoute :: Routes
 cleanRoute = customRoute createIndexRoute
@@ -31,16 +32,41 @@ cleanIndex url
   where
     idx = "index.html"
 
+-- Site variables
+twitter = "wilthomason"
+github = "wbthomason"
+site_title = "wil thomason"
+linkedin = "wbthomason"
+email = "wbthomason@{my department, abbr.}.{my university}.edu"
+author = "Wil Thomason"
+
+-- Contexts
+mainContext :: Context String
+mainContext = -- Variables
+              constField "twitter" twitter `mappend`
+              constField "github" github `mappend`
+              constField "site_title" site_title `mappend`
+              constField "linkedin" linkedin `mappend`
+              constField "email" email `mappend`
+              constField "author" author `mappend`
+              defaultContext
+
 main :: IO ()
 main =
   hakyll $ do
     match "images/*" $ do
       route idRoute
       compile copyFileCompiler
+    match "js/*" $ do
+      route idRoute
+      compile copyFileCompiler
     match "css/*" $ do
       route idRoute
       compile compressCssCompiler
     match "papers/*" $ do
+      route idRoute
+      compile copyFileCompiler
+    match "*.pdf" $ do
       route idRoute
       compile copyFileCompiler
     match "*.md" $ do
@@ -59,12 +85,13 @@ main =
         projects_section <- loadBody "projects.md"
         publications_section <- loadBody "publications.md"
         let indexCtx =
+              -- Sections
               constField "about" about_section `mappend`
               constField "contact" contact_section `mappend`
               constField "links" links_section `mappend`
               constField "projects" projects_section `mappend`
               constField "publications" publications_section `mappend`
-              defaultContext
+              mainContext
         getResourceBody >>= applyAsTemplate indexCtx >>=
           loadAndApplyTemplate "templates/default.html" indexCtx >>=
           relativizeUrls
