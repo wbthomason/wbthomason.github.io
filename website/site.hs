@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 
+import Data.List (intercalate, isInfixOf, isPrefixOf, isSuffixOf, sort)
 import Data.Monoid (mappend)
 import Hakyll
 import System.FilePath.Posix ((</>), takeBaseName, takeDirectory, takeFileName)
@@ -39,25 +40,32 @@ main =
     match "css/*" $ do
       route idRoute
       compile compressCssCompiler
+    match "papers/*" $ do
+      route idRoute
+      compile copyFileCompiler
     match "*.md" $ do
       route $ setExtension "html"
       compile $
         pandocCompiler >>=
         loadAndApplyTemplate "templates/default.html" defaultContext >>=
-        relativizeUrls
+        relativizeUrls >>=
+        cleanIndexUrls
     match "index.html" $ do
       route idRoute
       compile $ do
-        sections <- loadAll "*.md"
+        about_section <- loadBody "about.md"
+        contact_section <- loadBody "contact.md"
+        links_section <- loadBody "links.md"
+        projects_section <- loadBody "projects.md"
+        publications_section <- loadBody "publications.md"
         let indexCtx =
-              listField "posts" postCtx (return posts) `mappend`
-              constField "title" "Home" `mappend`
+              constField "about" about_section `mappend`
+              constField "contact" contact_section `mappend`
+              constField "links" links_section `mappend`
+              constField "projects" projects_section `mappend`
+              constField "publications" publications_section `mappend`
               defaultContext
         getResourceBody >>= applyAsTemplate indexCtx >>=
           loadAndApplyTemplate "templates/default.html" indexCtx >>=
           relativizeUrls
     match "templates/*" $ compile templateBodyCompiler
-
---------------------------------------------------------------------------------
-postCtx :: Context String
-postCtx = dateField "date" "%B %e, %Y" `mappend` defaultContext
