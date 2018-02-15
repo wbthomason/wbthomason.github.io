@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
-  {{ partial "head.html" . }}
-
-  <body class="layout-reverse">
-
-    {{ partial "sidebar.html" . }}
-
+  $partial("templates/head.html")$
+  <body>
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
       <div class="masthead">
         <div class="container">
           <h1 class="masthead-title">
-            <a href="/" title="Home">{{ .Site.Title }}</a>
-            <small>{{ .Site.Params.Tagline }}</small>
+            <a href="/" title="Home">$site_title$</a>
           </h1>
         </div>
           <nav class="masthead-nav" id="nav">
@@ -22,8 +16,7 @@
             <a href="/projects">projects</a>
             <a href="/publications">publications and presentations</a>
             <a href="https://wbthomason.github.io/blog">blog</a>
-            <a href="/media/wbthomason.cv.pdf">cv</a>
+            <a href="/wbthomason.cv.pdf">cv</a>
           </nav>
       </div>
-
       <div class="container content">
