@@ -1,9 +1,7 @@
-+++
-date = "2016-02-22T00:22:45-05:00"
-draft = false
-title = "links"
-
-+++
+---
+title: "links"
+url: "/links"
+---
 
 # Links
 

@@ -1,11 +1,7 @@
-+++
-date = "2016-02-22T00:22:53-05:00"
-draft = false
-title = "publications"
-sidebar = true
-url = "/publications"
-
-+++
+---
+title: "publications"
+url: "/publications"
+---
 
 # Awards
 

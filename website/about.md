@@ -1,13 +1,9 @@
-+++
-date = "2016-02-22T00:22:20-05:00"
-draft = false
-title = "about"
-sidebar = true
-url = "/about"
+---
+title: "about"
+url: "/about"
+---
 
-+++
-
-{{< figure src = "/media/about-photo.jpg" class = "about-photo" >}}
+<img src="/images/about-photo.jpg" class = "about-photo" />
 
 I'm Wil Thomason, a third-year PhD student in computer science at Cornell. My primary research
 interests are in **robotics**, though I'm also interested in machine learning, programming

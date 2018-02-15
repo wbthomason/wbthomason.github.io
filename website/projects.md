@@ -1,11 +1,7 @@
-+++
-date = "2016-02-22T00:22:49-05:00"
-draft = false
-title = "projects"
-sidebar = true
-url = "/projects"
-
-+++
+---
+title: "projects"
+url: "/projects"
+---
 
 # Research
 

@@ -57,25 +57,33 @@ main =
     match "images/*" $ do
       route idRoute
       compile copyFileCompiler
+
     match "js/*" $ do
       route idRoute
       compile copyFileCompiler
+
     match "css/*" $ do
       route idRoute
       compile compressCssCompiler
+
     match "papers/*" $ do
       route idRoute
       compile copyFileCompiler
+
     match "*.pdf" $ do
       route idRoute
       compile copyFileCompiler
+
     match "*.md" $ do
-      route $ setExtension "html"
+      route $ cleanRoute
       compile $
         pandocCompiler >>=
-        loadAndApplyTemplate "templates/default.html" defaultContext >>=
+        loadAndApplyTemplate "templates/page.html" mainContext >>=
+        saveSnapshot "content" >>=
+        loadAndApplyTemplate "templates/default.html" mainContext >>=
         relativizeUrls >>=
         cleanIndexUrls
+
     match "index.html" $ do
       route idRoute
       compile $ do
