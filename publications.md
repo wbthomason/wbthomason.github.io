@@ -6,10 +6,12 @@ url: "/publications"
 # Awards
 
 ## Research
+
 - [NDSEG Fellowship](https://ndseg.asee.org/) (April 2017)
 - [NSF GRFP Fellowship](https://www.nsfgrfp.org/) (March 2017)
 
 ## Teaching
+
 - Outstanding Teaching Assistant Award for my work on Cornell's [Foundations of 
   Robotics](http://www.cs.cornell.edu/courses/cs4750/2016fa/) course (May 2017)
 - Outstanding Teaching Assistant Award for my work on Cornell's [Introductory 
@@ -18,7 +20,7 @@ url: "/publications"
 
 # Publications
 
-"Social Momentum: A Framework for Legible Navigation in Dynamic Multi-Agent Environments"
+["Social Momentum: A Framework for Legible Navigation in Dynamic Multi-Agent Environments"](http://www.cmavrogiannis.com/docs/mavrogiannis_hri18_preprint.pdf)
 : Christoforos Mavrogiannis, **Wil Thomason**, and Ross Knepper.
 Accepted to HRI 2018
 
@@ -31,6 +33,7 @@ Accepted to ISER 2016
 Accepted to IJRFITA.
 
 # Presentations
+
 [“Exploiting Heterogeneity in Robot Teams Through a Formalism of Capabilities”](https://www.seas.upenn.edu/~prorok/rss2017/papers/Thomason_RSS-Workshop_ExtAbstract.pdf)
 : **Wil Thomason** and Ross Knepper.
 Presented at RSS 2017 in the workshop on [Heterogeneity and Diversity for Resilience
