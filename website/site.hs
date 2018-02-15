@@ -87,11 +87,11 @@ main =
     match "index.html" $ do
       route idRoute
       compile $ do
-        about_section <- loadBody "about.md"
-        contact_section <- loadBody "contact.md"
-        links_section <- loadBody "links.md"
-        projects_section <- loadBody "projects.md"
-        publications_section <- loadBody "publications.md"
+        about_section <- loadSnapshot "about.md" "content"
+        contact_section <- loadSnapshot "contact.md" "content"
+        links_section <- loadSnapshot "links.md" "content"
+        projects_section <- loadSnapshot "projects.md" "content"
+        publications_section <- loadSnapshot "publications.md" "content"
         let indexCtx =
               -- Sections
               constField "about" about_section `mappend`
