@@ -88,10 +88,8 @@ main =
       route idRoute
       compile $ do
         about_section <- loadSnapshotBody "about.md" "content"
-        awards_section <- loadSnapshotBody "awards.md" "content"
         contact_section <- loadSnapshotBody "contact.md" "content"
         links_section <- loadSnapshotBody "links.md" "content"
-        publications_section <- loadSnapshotBody "publications.md" "content"
         let indexCtx =
               -- Sections
               constField "about" about_section `mappend`
