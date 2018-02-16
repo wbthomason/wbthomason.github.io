@@ -109,6 +109,48 @@ h6 {
 .masthead-contents {
   margin-left: 2em;
 }
+@media (max-width: 37rem) {
+  .masthead-contents {
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .masthead {
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .masthead-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .masthead-nav > ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-photo {
+    margin: 0;
+  }
+
+  .container {
+    margin-left: auto;
+  }
+}
 
 .masthead-title {
   width: 100%;
