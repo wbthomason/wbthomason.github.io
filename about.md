@@ -2,9 +2,6 @@
 title: "about"
 url: "/about"
 ---
-<figure class="about-photo">
-  <img src="/images/about-photo.jpg"/>
-</figure>
 
 I'm Wil Thomason, a third-year PhD student in computer science at Cornell. My primary research
 interests are in **robotics**, though I'm also interested in machine learning, programming

@@ -13,7 +13,6 @@
  * https://github.com/poole/lanyon.
  */
 
-
 /*
  * Contents
  *
@@ -26,7 +25,6 @@
  * Reverse layout
  * Themes
  */
-
 
 /*
  * Global resets
@@ -44,14 +42,18 @@ html {
   font-family: "EB Garamond", "PT Serif", Georgia, "Times New Roman", serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Raleway, "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 1.3em;
   font-weight: 550;
   color: #313131;
-  letter-spacing: -.025rem;
+  letter-spacing: -0.025rem;
 }
-
 
 /*
  * Wrapper
@@ -65,7 +67,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
 }
-
 
 /*
  * Container
@@ -84,10 +85,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 56rem) {
   .container {
-    max-width: 56rem;
+    max-width: 80rem;
   }
 }
-
 
 /*
  * Masthead
@@ -96,21 +96,32 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .masthead {
-  padding-top:    1rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
-  border-bottom: 1px solid #eee;
+  float: left;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
 }
+
+.masthead-contents {
+  margin-left: 2em;
+}
+
 .masthead-title {
+  width: 100%;
   font-family: Raleway;
-  margin-top: 0;
+  margin-top: 0.5em;
   margin-bottom: 0;
   color: #505050;
-  font-size: 3.5em;
-  display: flex;
+  font-size: 2.5em;
+  display: flow-root;
   justify-content: center;
   align-items: center;
 }
+
 .masthead-title a {
   text-decoration: none;
   color: #505050;
@@ -131,24 +142,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#nav {
-  height: 30px;
-  hidden: false;
-  background: #fff;
-}
-
 .masthead-nav {
   font-family: Raleway;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   line-height: 1.5;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
+.masthead-nav > ul {
+  list-style: none;
+}
+
 .masthead-nav a {
-  margin-left: 15px;
   margin-right: 15px;
   color: #111;
 }
@@ -168,11 +174,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 75%;
 }
 
-.footer-nav >ul {
+.footer-nav > ul {
   list-style: none;
 }
 
-.footer-nav >ul>li {
+.footer-nav > ul > li {
   display: inline;
   padding: 1.5em;
 }
@@ -191,6 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 .page,
 .post {
   margin-bottom: 4em;
+  display: flow-root;
 }
 
 /* Blog post or page title */
@@ -205,12 +212,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-photo {
-  float: right;
+  float: left;
+  margin-top: 0;
 }
 
 .about-photo > img {
-  width: 15em;
-  height: 15em;
+  width: 12em;
+  height: 12em;
+  margin: 0;
 }
 
 @media (max-width: 38rem) {
@@ -226,6 +235,8 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   width: 1.3em;
   height: 1.3em;
-vertical-align: middle; }
+  vertical-align: middle;
+}
 .icon > svg path {
-fill: #828282; }
+  fill: #828282;
+}
