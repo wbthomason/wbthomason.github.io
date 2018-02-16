@@ -50,9 +50,13 @@ h5,
 h6 {
   font-family: Raleway, "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 1.3em;
-  font-weight: 550;
+  font-weight: 500;
   color: #313131;
   letter-spacing: -0.025rem;
+}
+
+h1 {
+  font-size: 1.5em;
 }
 
 /*
