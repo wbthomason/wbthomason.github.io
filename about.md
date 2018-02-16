@@ -3,9 +3,14 @@ title: "about"
 url: "/about"
 ---
 
-I'm Wil Thomason, a third-year PhD student in computer science at Cornell. My primary research
-interests are in **robotics**, though I'm also interested in machine learning, programming
-languages, algorithms, and interdisciplinary efforts among these areas.
+I'm Wil Thomason, a third-year PhD student in the [Department of Computer
+Science](http://www.cs.cornell.edu) at Cornell University. My primary research interests are in
+**robotics**, though I'm also interested in machine learning, programming languages, and
+interdisciplinary efforts among these areas. I am graciously funded by the [NDSEG
+Fellowship][ndseg]. I am advised by [Professor Ross Knepper][rak].
+
+[rak]: http://www.cs.cornell.edu/~rak/
+[ndseg]: https://ndseg.asee.org/
 
 # Research
 
@@ -20,25 +25,19 @@ I'm interested in algorithms for efficient cooperation in heterogeneous multi-ro
 particular, for ad hoc teams. I want teams of humans and arbitrary robotic systems to be able to
 work together in a manner which both "feels" natural and is efficient and effective.
 
-Currently, I work with [Professor Ross Knepper][rak] on projects related to
-situated gestural understanding, contextual language understanding, and multi-agent planning.
-
-[rak]: http://www.cs.cornell.edu/~rak/
-
 For more about my research, please see my [publication and presentation][pubs] list.
 
 [pubs]: /publications
 
 # News
 
-- My paper with Christoforos Mavrogiannis and Ross Knepper, "Social Momentum: A Framework for 
-  Legible Navigation in Dynamic Multi-Agent Environments", was accepted to HRI 2018 (November 
-  2017)
+- My paper with Christoforos Mavrogiannis and Ross Knepper, ["Social Momentum: A Framework for 
+  Legible Navigation in Dynamic Multi-Agent Environments"](http://www.cmavrogiannis.com/docs/mavrogiannis_hri18_preprint.pdf), was accepted to HRI 2018 (November 2017)
 - I presented my workshop paper [“Exploiting Heterogeneity in Robot Teams Through a Formalism of 
   Capabilities”](https://www.seas.upenn.edu/~prorok/rss2017/papers/Thomason_RSS-Workshop_ExtAbstract.pdf) 
   at RSS 2017 in the workshop on [Heterogeneity and Diversity for Resilience
 in Multi-Robot Systems](https://www.seas.upenn.edu/~prorok/rss2017/) (July 2017)
-- I was awarded the [NDSEG Fellowship](https://ndseg.asee.org/) (April 2017)
+- I was awarded the [NDSEG Fellowship][ndseg] (April 2017)
 - I was awarded the [NSF GRFP Fellowship](https://www.nsfgrfp.org/) (March 2017)
 - I presented my paper ["Zero-Shot Learning for Unfamiliar Gesture 
   Recognition”](https://wbthomason.github.io/papers/iser2016_unfamiliargestures.pdf) at ISER 2016 

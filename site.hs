@@ -88,6 +88,7 @@ main =
       route idRoute
       compile $ do
         about_section <- loadSnapshotBody "about.md" "content"
+        awards_section <- loadSnapshotBody "awards.md" "content"
         contact_section <- loadSnapshotBody "contact.md" "content"
         links_section <- loadSnapshotBody "links.md" "content"
         publications_section <- loadSnapshotBody "publications.md" "content"
@@ -96,7 +97,6 @@ main =
               constField "about" about_section `mappend`
               constField "contact" contact_section `mappend`
               constField "links" links_section `mappend`
-              constField "publications" publications_section `mappend`
               mainContext
         getResourceBody >>= applyAsTemplate indexCtx >>=
           loadAndApplyTemplate "templates/default.html" indexCtx >>=
