@@ -7,50 +7,6 @@ import Hakyll
 import System.FilePath.Posix ((</>), takeBaseName, takeDirectory, takeFileName)
 
 --------------------------------------------------------------------------------
--- Routes
--- Taken from https://www.rohanjain.in/hakyll-clean-urls/
-cleanRoute :: Routes
-cleanRoute = customRoute createIndexRoute
-  where
-    createIndexRoute ident = takeDirectory p </> takeBaseName p </> "index.html"
-      where
-        p = toFilePath ident
-
-cleanIndexUrls :: Item String -> Compiler (Item String)
-cleanIndexUrls = return . fmap (withUrls cleanIndex)
-
-cleanIndexHtmls :: Item String -> Compiler (Item String)
-cleanIndexHtmls = return . fmap (replaceAll pattern replacement)
-  where
-    pattern = "/index.html"
-    replacement = const "/"
-
-cleanIndex :: String -> String
-cleanIndex url
-  | idx `isSuffixOf` url = take (length url - length idx) url
-  | otherwise = url
-  where
-    idx = "index.html"
-
--- Site variables
-twitter = "wilthomason"
-github = "wbthomason"
-site_title = "wil thomason"
-linkedin = "wbthomason"
-email = "wbthomason@{my department, abbr.}.{my university}.edu"
-author = "Wil Thomason"
-
--- Contexts
-mainContext :: Context String
-mainContext = -- Variables
-              constField "twitter" twitter `mappend`
-              constField "github" github `mappend`
-              constField "site_title" site_title `mappend`
-              constField "linkedin" linkedin `mappend`
-              constField "email" email `mappend`
-              constField "author" author `mappend`
-              defaultContext
-
 main :: IO ()
 main =
   hakyll $ do
@@ -100,3 +56,50 @@ main =
           loadAndApplyTemplate "templates/default.html" indexCtx >>=
           relativizeUrls
     match "templates/*" $ compile templateBodyCompiler
+-- Bibtex parsing
+
+
+-- Routes
+-- Taken from https://www.rohanjain.in/hakyll-clean-urls/
+cleanRoute :: Routes
+cleanRoute = customRoute createIndexRoute
+  where
+    createIndexRoute ident = takeDirectory p </> takeBaseName p </> "index.html"
+      where
+        p = toFilePath ident
+
+cleanIndexUrls :: Item String -> Compiler (Item String)
+cleanIndexUrls = return . fmap (withUrls cleanIndex)
+
+cleanIndexHtmls :: Item String -> Compiler (Item String)
+cleanIndexHtmls = return . fmap (replaceAll pattern replacement)
+  where
+    pattern = "/index.html"
+    replacement = const "/"
+
+cleanIndex :: String -> String
+cleanIndex url
+  | idx `isSuffixOf` url = take (length url - length idx) url
+  | otherwise = url
+  where
+    idx = "index.html"
+
+-- Site variables
+twitter = "wilthomason"
+github = "wbthomason"
+site_title = "wil thomason"
+linkedin = "wbthomason"
+email = "wbthomason@{my department, abbr.}.{my university}.edu"
+author = "Wil Thomason"
+
+-- Contexts
+mainContext :: Context String
+mainContext = -- Variables
+              constField "twitter" twitter `mappend`
+              constField "github" github `mappend`
+              constField "site_title" site_title `mappend`
+              constField "linkedin" linkedin `mappend`
+              constField "email" email `mappend`
+              constField "author" author `mappend`
+              defaultContext
+
