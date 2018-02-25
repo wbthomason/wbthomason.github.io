@@ -22,7 +22,11 @@ Accepted to IJRFITA.
 [“Exploiting Heterogeneity in Robot Teams Through a Formalism of Capabilities”](https://www.seas.upenn.edu/~prorok/rss2017/papers/Thomason_RSS-Workshop_ExtAbstract.pdf)
 : **Wil Thomason** and Ross Knepper.
 Presented at RSS 2017 in the workshop on [Heterogeneity and Diversity for Resilience
-in Multi-Robot Systems](https://www.seas.upenn.edu/~prorok/rss2017/).
+in Multi-Robot Systems](/papers/rss2017_workshop_heterogeneous_coordination.pdf).
+
+["Toward Contextual Grounding of Unfamiliar Gestures for Human-Robot Interaction"](/papers/asl4gup2017_unfamiliargestures.pdf)
+: **Wil Thomason**.
+Presented at FG 2017 in the First International Workshop on [Adaptive Shot Learning for Gesture Understanding and Production](https://engineering.purdue.edu/ASL4GUP/)
 
 ["Recognizing Unfamiliar Gestures for Human-Robot Interaction through Zero-Shot Learning"](http://www.ece.rochester.edu/projects/rail/mlhrc2016/papers/mlhrc-rss16-thomason.pdf)
 : **Wil Thomason**.
