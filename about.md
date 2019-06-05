@@ -3,7 +3,7 @@ title: "about"
 url: "/about"
 ---
 
-I'm Wil Thomason, a third-year PhD student in the [Department of Computer
+I'm Wil Thomason, a fourth-year PhD candidate in the [Department of Computer
 Science](http://www.cs.cornell.edu) at Cornell University. My primary research interests are in
 **robotics**, though I'm also interested in machine learning, programming languages, and
 interdisciplinary efforts among these areas. I am graciously funded by the [NDSEG
