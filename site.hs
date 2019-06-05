@@ -40,6 +40,16 @@ main =
         relativizeUrls >>=
         cleanIndexUrls
 
+    match "*.org" $ do
+      route $ cleanRoute
+      compile $
+        pandocCompiler >>=
+        loadAndApplyTemplate "templates/page.html" mainContext >>=
+        saveSnapshot "content" >>=
+        loadAndApplyTemplate "templates/default.html" mainContext >>=
+        relativizeUrls >>=
+        cleanIndexUrls
+
     match "index.html" $ do
       route idRoute
       compile $ do
@@ -74,9 +84,9 @@ cleanIndexUrls :: Item String -> Compiler (Item String)
 cleanIndexUrls = return . fmap (withUrls cleanIndex)
 
 cleanIndexHtmls :: Item String -> Compiler (Item String)
-cleanIndexHtmls = return . fmap (replaceAll pattern replacement)
+cleanIndexHtmls = return . fmap (replaceAll indexPattern replacement)
   where
-    pattern = "/index.html"
+    indexPattern = "/index.html"
     replacement = const "/"
 
 cleanIndex :: String -> String
@@ -89,7 +99,7 @@ cleanIndex url
 -- Site variables
 twitter = "wilthomason"
 github = "wbthomason"
-site_title = "wil thomason"
+siteTitle = "wil thomason"
 linkedin = "wbthomason"
 email = "wbthomason@{my department, abbr.}.{my university}.edu"
 author = "Wil Thomason"
@@ -99,7 +109,7 @@ mainContext :: Context String
 mainContext = -- Variables
               constField "twitter" twitter `mappend`
               constField "github" github `mappend`
-              constField "site_title" site_title `mappend`
+              constField "site_title" siteTitle `mappend`
               constField "linkedin" linkedin `mappend`
               constField "email" email `mappend`
               constField "author" author `mappend`
