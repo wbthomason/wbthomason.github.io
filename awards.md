@@ -16,5 +16,3 @@ url: "/awards"
   Robotics](http://www.cs.cornell.edu/courses/cs4750/2016fa/) course (May 2017)
 - Outstanding Teaching Assistant Award for my work on Cornell's [Introductory 
   CS](http://www.cs.cornell.edu/courses/cs1110/2015fa/) course (May 2016)
-
-

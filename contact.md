@@ -9,4 +9,3 @@ url: "/contact"
 * {firstname}(dot){lastname}@{Google's mail service}
 * Twitter: [@wilthomason](https://twitter.com/wilthomason)
 * Github: [wbthomason](https://github.com/wbthomason)
-* Skype: Request via email

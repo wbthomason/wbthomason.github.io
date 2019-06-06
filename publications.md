@@ -13,13 +13,17 @@ Accepted to HRI 2018
 : **Wil Thomason** and Ross Knepper.
 Accepted to and presented at ISER 2016
 
-"An Accurate Real-Time RFID-Based Location System"
+["An Accurate Real-Time RFID-Based Location System"](https://www.inderscienceonline.com/doi/abs/10.1504/IJRFITA.2018.091306)
 : Kirti Chawla, Christopher McFarland, Gabriel Robins, and **Wil Thomason**.
-Accepted to IJRFITA.
+Published in IJRFITA.
 
 # Workshop Presentations
+"A Flexible Sampling-Based Approach to Task and Motion Planning"
+: Wil Thomason and Ross Knepper
+Accepted to the [Robust Task and Motion Planning](http://dyalab.mines.edu/2019/rss-workshop/)
+workshop at RSS 2019
 
-[“Exploiting Heterogeneity in Robot Teams Through a Formalism of Capabilities”](https://www.seas.upenn.edu/~prorok/rss2017/papers/Thomason_RSS-Workshop_ExtAbstract.pdf)
+[“Exploiting Heterogeneity in Robot Teams Through a Formalism of Capabilities”](/papers/rss2017_workshop_heterogeneous_coordination.pdf)
 : **Wil Thomason** and Ross Knepper.
 Presented at RSS 2017 in the workshop on [Heterogeneity and Diversity for Resilience
 in Multi-Robot Systems](/papers/rss2017_workshop_heterogeneous_coordination.pdf).

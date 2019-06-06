@@ -3,26 +3,29 @@ title: "about"
 url: "/about"
 ---
 
-I'm Wil Thomason, a fourth-year PhD candidate in the [Department of Computer
-Science](http://www.cs.cornell.edu) at Cornell University. My primary research interests are in
-**robotics**, though I'm also interested in machine learning, programming languages, and
-interdisciplinary efforts among these areas. I am graciously funded by the [NDSEG
-Fellowship][ndseg]. I am advised by [Professor Ross Knepper][rak].
+I am a fourth-year PhD candidate in the [Department of Computer Science](http://www.cs.cornell.edu)
+at Cornell University. I work on **integrated task and motion planning**. Specifically, I'm
+interested in improving the *efficiency*, *robustness*, and *autonomy* of robot task and motion
+planning.
+
+Though I primarily research **robotics**, I'm also interested in machine learning, programming
+languages, and interdisciplinary efforts among these areas. I am graciously funded by the [NDSEG
+Fellowship][ndseg]. I am advised by [Professor Ross Knepper][rak] in the [Robotic Personal
+Assistants Lab](https://rpal.cs.cornell.edu/).
 
 [rak]: http://www.cs.cornell.edu/~rak/
 [ndseg]: https://ndseg.asee.org/
 
 # Research
 
-I'm interested in **planning**, particularly in **integrated task and motion planning** and
-**multi-robot collaboration**.
+I work on **integrated task and motion planning**. My work explores approaches to task and motion
+planning that make few domain-specific assumptions but provide high performance and robustness to
+action failure. My current research continues along these lines, as well as looking into improved
+planning effort reuse through abstract plan representation and possible fusions of classical
+planning with modern machine learning for more efficient, automatic planning and execution.
 
-In task and motion planning, I'm interested in exploring tighter integration between existing
-planners to eliminate backtracking and replanning. I'm also interested in combining traditional
-planners with machine learning approaches for skill transfer and adaptation.
-
-I'm interested in algorithms for efficient cooperation in heterogeneous multi-robot teams --- in
-particular, for ad hoc teams. I want teams of humans and arbitrary robotic systems to be able to
+I'm also interested in algorithms for efficient cooperation in heterogeneous multi-robot teams ---
+in particular, for ad hoc teams. I want teams of humans and arbitrary robotic systems to be able to
 work together in a manner which both "feels" natural and is efficient and effective.
 
 For more about my research, please see my [publication and presentation][pubs] list.
@@ -31,6 +34,11 @@ For more about my research, please see my [publication and presentation][pubs] l
 
 # News
 
+- I passed my A Exam, presenting on "An Efficient, Flexible Sampling-Based Approach to Integrated
+  Task and Motion Planning". I'm now a PhD candidate. (June 2019)
+- My workshop paper with Ross Knepper, "A Flexible Sampling-Based Approach to Task and Motion
+  Planning", will be presented at RSS 2019 in the [Robust Task and Motion
+  Planning](http://dyalab.mines.edu/2019/rss-workshop/) workshop. (June 2019)
 - My paper with Christoforos Mavrogiannis and Ross Knepper, ["Social Momentum: A Framework for 
   Legible Navigation in Dynamic Multi-Agent Environments"](http://www.cmavrogiannis.com/docs/mavrogiannis_hri18_preprint.pdf), was accepted to HRI 2018 (November 2017)
 - I presented my workshop paper [“Exploiting Heterogeneity in Robot Teams Through a Formalism of 
@@ -72,4 +80,4 @@ in Multi-Robot Systems](https://www.seas.upenn.edu/~prorok/rss2017/) (July 2017)
 # Departmental Service
 
 - I help run the [CS department colloquium](https://www.cs.cornell.edu/events/colloquium) talks
-- I coordinate the Cornell CS PhD Mentor program
+- From 2016 through 2018, I coordinated the Cornell CS PhD mentor program
