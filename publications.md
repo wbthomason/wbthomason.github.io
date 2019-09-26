@@ -5,6 +5,10 @@ url: "/publications"
 
 # Publications
 
+["A Unified Sampling-Based Approach to Integrated Task and Motion Planning"](/papers/isrr2019_unifiedtamp.pdf)
+: Wil Thomason and Ross Knepper
+Accepted to ISRR 2019
+
 ["Social Momentum: A Framework for Legible Navigation in Dynamic Multi-Agent Environments"](http://www.cmavrogiannis.com/docs/mavrogiannis_hri18_preprint.pdf)
 : Christoforos Mavrogiannis, **Wil Thomason**, and Ross Knepper.
 Accepted to HRI 2018

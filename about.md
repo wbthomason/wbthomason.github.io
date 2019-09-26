@@ -3,8 +3,8 @@ title: "about"
 url: "/about"
 ---
 
-I am a fourth-year PhD candidate in the [Department of Computer Science](http://www.cs.cornell.edu)
-at Cornell University. I work on **integrated task and motion planning**. Specifically, I'm
+I am a fifth-year PhD candidate in the [Department of Computer Science](http://www.cs.cornell.edu)
+at Cornell University. I work on **combining symbolic and geometric planning**. Specifically, I'm
 interested in improving the *efficiency*, *robustness*, and *autonomy* of robot task and motion
 planning.
 
@@ -18,11 +18,12 @@ Assistants Lab](https://rpal.cs.cornell.edu/).
 
 # Research
 
-I work on **integrated task and motion planning**. My work explores approaches to task and motion
-planning that make few domain-specific assumptions but provide high performance and robustness to
-action failure. My current research continues along these lines, as well as looking into improved
-planning effort reuse through abstract plan representation and possible fusions of classical
-planning with modern machine learning for more efficient, automatic planning and execution.
+I work on **combining symbolic and geometric planning**, often referred to as "integrated task and
+motion planning". My work explores approaches to task and motion planning that provide high
+performance and robustness to action failure with lightweight domain-specific assumptions. I also
+research approaches to improved planning effort reuse through abstract plan representation and
+fusions of classical planning with modern machine learning for more efficient, automatic planning
+and execution.
 
 I'm also interested in algorithms for efficient cooperation in heterogeneous multi-robot teams ---
 in particular, for ad hoc teams. I want teams of humans and arbitrary robotic systems to be able to
@@ -34,6 +35,9 @@ For more about my research, please see my [publication and presentation][pubs] l
 
 # News
 
+- My paper with Ross Knepper, ["A Unified Sampling-Based Approach to Integrated Task and Motion
+  Planning"](/papers/isrr2019_unifiedtamp.pdf) was accepted to ISRR 2019
+  (July 2019)
 - I passed my A Exam, presenting on "An Efficient, Flexible Sampling-Based Approach to Integrated
   Task and Motion Planning". I'm now a PhD candidate. (June 2019)
 - My workshop paper with Ross Knepper, "A Flexible Sampling-Based Approach to Task and Motion
@@ -48,7 +52,7 @@ in Multi-Robot Systems](https://www.seas.upenn.edu/~prorok/rss2017/) (July 2017)
 - I was awarded the [NDSEG Fellowship][ndseg] (April 2017)
 - I was awarded the [NSF GRFP Fellowship](https://www.nsfgrfp.org/) (March 2017)
 - I presented my paper ["Zero-Shot Learning for Unfamiliar Gesture 
-  Recognition”](https://wbthomason.github.io/papers/iser2016_unfamiliargestures.pdf) at ISER 2016 
+  Recognition”](/papers/iser2016_unfamiliargestures.pdf) at ISER 2016 
   (October 2016)
 - I presented my workshop paper [“Recognizing Unfamiliar Gestures for Human-Robot Interaction 
   through Zero-Shot 
@@ -56,7 +60,7 @@ in Multi-Robot Systems](https://www.seas.upenn.edu/~prorok/rss2017/) (July 2017)
   at RSS 2016 in the [2nd Workshop on Model Learning for Human-Robot 
   Communication](http://www.ece.rochester.edu/projects/rail/mlhrc2016/) (June 2016)
 - My paper ["Zero-Shot Learning for Unfamiliar Gesture 
-  Recognition”](https://wbthomason.github.io/papers/iser2016_unfamiliargestures.pdf) was accepted to 
+  Recognition”](/papers/iser2016_unfamiliargestures.pdf) was accepted to 
   ISER 2016 (May 2016)
 
 # Teaching
