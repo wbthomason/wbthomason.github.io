@@ -1,0 +1,62 @@
+You will be asked to post a file to:
+      [4mhttps://wbthomason.github.io/.well-known/keybase.txt[24m
+   OR [4mhttps://wbthomason.github.io/keybase.txt[24m
+Make the following file available at:
+      [4mhttps://wbthomason.github.io/.well-known/keybase.txt[24m
+   OR [4mhttps://wbthomason.github.io/keybase.txt[24m
+
+==================================================================
+https://keybase.io/wbthomason
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://wbthomason.github.io
+  * I am wbthomason (https://keybase.io/wbthomason) on keybase.
+  * I have a public key ASCbTtjzCOnx2pkzWESy9q_fFggu8vpf276mls42opPfVAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01205722574b1303ead4bfd35353435095faf795f07073a3308e2f894829f02625000a",
+            "host": "keybase.io",
+            "kid": "01209b4ed8f308e9f1da99335844b2f6afdf16082ef2fa5fdbbea696ce36a293df540a",
+            "uid": "22372d5a8ccd7deb945c9749b94cc619",
+            "username": "wbthomason"
+        },
+        "service": {
+            "hostname": "wbthomason.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.17"
+    },
+    "ctime": 1471968949,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1471968971,
+        "hash": "e14fd0087a4248932065647a6eeca7dc7966edad2740608f4f33343a300a0ec0e85df3dcd5062fbe37d879549e480c57dd8571abced42388349570a6cf6e585e",
+        "seqno": 596950
+    },
+    "prev": "81957f8ac97a7073ea20cb072ed2ace85fb20801980b8f42142ee3fdf2b2badc",
+    "seqno": 37,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgm07Y8wjp8dqZM1hEsvav3xYILvL6X9u+ppbONqKT31QKp3BheWxvYWTFAv97ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNTcyMjU3NGIxMzAzZWFkNGJmZDM1MzUzNDM1MDk1ZmFmNzk1ZjA3MDczYTMzMDhlMmY4OTQ4MjlmMDI2MjUwMDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOWI0ZWQ4ZjMwOGU5ZjFkYTk5MzM1ODQ0YjJmNmFmZGYxNjA4MmVmMmZhNWZkYmJlYTY5NmNlMzZhMjkzZGY1NDBhIiwidWlkIjoiMjIzNzJkNWE4Y2NkN2RlYjk0NWM5NzQ5Yjk0Y2M2MTkiLCJ1c2VybmFtZSI6IndidGhvbWFzb24ifSwic2VydmljZSI6eyJob3N0bmFtZSI6IndidGhvbWFzb24uZ2l0aHViLmlvIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTcifSwiY3RpbWUiOjE0NzE5Njg5NDksImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ3MTk2ODk3MSwiaGFzaCI6ImUxNGZkMDA4N2E0MjQ4OTMyMDY1NjQ3YTZlZWNhN2RjNzk2NmVkYWQyNzQwNjA4ZjRmMzMzNDNhMzAwYTBlYzBlODVkZjNkY2Q1MDYyZmJlMzdkODc5NTQ5ZTQ4MGM1N2RkODU3MWFiY2VkNDIzODgzNDk1NzBhNmNmNmU1ODVlIiwic2Vxbm8iOjU5Njk1MH0sInByZXYiOiI4MTk1N2Y4YWM5N2E3MDczZWEyMGNiMDcyZWQyYWNlODVmYjIwODAxOTgwYjhmNDIxNDJlZTNmZGYyYjJiYWRjIiwic2Vxbm8iOjM3LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQFPmlAm+hU3pv6Grz/2Ld2JNs/gJZ6CYBI3YU5vOiPC4rB7BI/JmY/SzbB55JT1aV8V1vNcaOpODHwNtHpN25Q+oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCAENZLgWBH2ZWwmBs8g43FEGWL1s9U0mvqyN9Q0Y3rlX6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wbthomason
+
+==================================================================
+
