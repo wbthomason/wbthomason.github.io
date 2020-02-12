@@ -167,6 +167,7 @@ h1 {
 }
 .masthead-nav > ul {
   list-style: none;
+  padding-left: 0;
 }
 .masthead-nav a {
   margin-right: 15px;
