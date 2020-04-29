@@ -28,9 +28,12 @@
       href="../publications/favicon.ico"
       type="image/x-icon"
     />
+
+    <!-- JS for collapsible BibTeX -->
+    <script src="../js/collapsible_bibtex.js"></script>
   </head>
 
-  <body>
+  <body onload="setup_collapsibles()">
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
@@ -109,48 +112,207 @@
       </div>
       <div class="container content">
         <main class="page">
-          <h1 id="publications">Publications</h1>
-          <dl>
-            <dt>
-              <a href="../papers/isrr2019_unifiedtamp.pdf"
-                >“A Unified Sampling-Based Approach to Integrated Task and
-                Motion Planning”</a
+          <h1>Conference Publications</h1>
+          <dl class="pubdata">
+            <dt class="pubtitle">
+              <b>
+                “A Unified Sampling-Based Approach to Integrated Task and Motion
+                Planning”</b
               >
             </dt>
             <dd>
               <strong>Wil Thomason</strong> and Ross Knepper. Accepted to and
               presented at ISRR 2019
+              <br />
+              <a class="paperlink" href="../papers/isrr2019_unifiedtamp.pdf">
+                <span class="icon">
+                  <svg viewBox="0 0 384 512">
+                    <path
+                      fill="currentColor"
+                      d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2
+              46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2
+              62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7
+              6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3
+                                        0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24
+                                        24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5
+                                        11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4
+                                        44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1
+                                        0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5
+                                        10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7
+                                        11.8 47.1 19.5 64 19.5 29.2 0 31.2-32
+                                        19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279
+                                        7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1
+                                        255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8
+                                        9z"
+                    ></path></svg></span
+                >PDF</a
+              >
+              <span class="linksep">/</span>
+              <span class="bibtexcollapsible">BibTeX</span>
+              <div class="bibtexcontent">
+                <pre>
+@inproceedings { thomason2019unified,
+  title={A Unified Sampling-Based Approach to Integrated Task and Motion Planning}, 
+  author={Thomason, Wil and Knepper, Ross A},
+  booktitle={International Symposium on Robotics Research (ISRR)},
+  year={2019}
+}</pre
+                >
+              </div>
             </dd>
-            <dt>
-              <a
-                href="http://www.cmavrogiannis.com/docs/mavrogiannis_hri18_preprint.pdf"
+            <dt class="pubtitle">
+              <b
                 >“Social Momentum: A Framework for Legible Navigation in Dynamic
-                Multi-Agent Environments”</a
+                Multi-Agent Environments”</b
               >
             </dt>
             <dd>
               Christoforos Mavrogiannis, <strong>Wil Thomason</strong>, and Ross
-              Knepper. Accepted to HRI 2018
+              Knepper.
+              <br />
+              <a
+                class="paperlink"
+                href="http://www.cmavrogiannis.com/docs/mavrogiannis_hri18_preprint.pdf"
+              >
+                <span class="icon">
+                  <svg viewBox="0 0 384 512">
+                    <path
+                      fill="currentColor"
+                      d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2
+              46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2
+              62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7
+              6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3
+                                        0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24
+                                        24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5
+                                        11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4
+                                        44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1
+                                        0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5
+                                        10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7
+                                        11.8 47.1 19.5 64 19.5 29.2 0 31.2-32
+                                        19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279
+                                        7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1
+                                        255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8
+                                        9z"
+                    ></path></svg></span
+                >PDF</a
+              >
+              <span class="linksep">/</span>
+              <span class="bibtexcollapsible">BibTeX</span>
+              <div class="bibtexcontent">
+                <pre>
+@inproceedings{mavrogiannis2018social,
+  title={Social momentum: A framework for legible navigation in dynamic multi-agent environments},
+  author={Mavrogiannis, Christoforos I and Thomason, Wil B and Knepper, Ross A},
+  booktitle={Proceedings of the 2018 ACM/IEEE International Conference on Human-Robot Interaction},
+  pages={361--369},
+  year={2018}
+}</pre
+                >
+              </div>
             </dd>
-            <dt>
-              <a href="../papers/iser2016_unfamiliargestures.pdf"
-                >“Zero-Shot Learning for Unfamiliar Gesture Recognition”</a
+            <dt class="pubtitle">
+              <b
+                >“Recognizing Unfamiliar Gesturesr for Human-Robot Interaction
+                through Zero-Shot Learning”</b
               >
             </dt>
             <dd>
-              <strong>Wil Thomason</strong> and Ross Knepper. Accepted to and
-              presented at ISER 2016
-            </dd>
-            <dt>
+              <strong>Wil Thomason</strong> and Ross Knepper.
+              <br />
               <a
-                href="https://www.inderscienceonline.com/doi/abs/10.1504/IJRFITA.2018.091306"
-                >“An Accurate Real-Time RFID-Based Location System”</a
+                class="paperlink"
+                href="../papers/iser2016_unfamiliargestures.pdf"
               >
+                <span class="icon">
+                  <svg viewBox="0 0 384 512">
+                    <path
+                      fill="currentColor"
+                      d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2
+              46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2
+              62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7
+              6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3
+                                        0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24
+                                        24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5
+                                        11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4
+                                        44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1
+                                        0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5
+                                        10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7
+                                        11.8 47.1 19.5 64 19.5 29.2 0 31.2-32
+                                        19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279
+                                        7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1
+                                        255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8
+                                        9z"
+                    ></path></svg></span
+                >PDF</a
+              >
+              <span class="linksep">/</span>
+              <span class="bibtexcollapsible">BibTeX</span>
+              <div class="bibtexcontent">
+                <pre>
+@inproceedings{thomason2016recognizing,
+  title={Recognizing unfamiliar gestures for human-robot interaction through zero-shot learning},
+  author={Thomason, Wil and Knepper, Ross A},
+  booktitle={International Symposium on Experimental Robotics},
+  pages={841--852},
+  year={2016},
+  organization={Springer}
+}</pre
+                >
+              </div>
+            </dd>
+          </dl>
+          <h1>Journal Publications</h1>
+          <dl class="pubdata">
+            <dt class="pubtitle">
+              <b>“An Accurate Real-Time RFID-Based Location System”</b>
             </dt>
             <dd>
               Kirti Chawla, Christopher McFarland, Gabriel Robins, and
               <strong>Wil Thomason</strong> (alphabetically ordered). Published
               in IJRFITA.
+              <br />
+              <a
+                class="paperlink"
+                href="https://www.inderscienceonline.com/doi/abs/10.1504/IJRFITA.2018.091306"
+              >
+                <span class="icon">
+                  <svg viewBox="0 0 384 512">
+                    <path
+                      fill="currentColor"
+                      d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2
+              46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2
+              62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7
+              6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3
+                                        0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24
+                                        24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5
+                                        11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4
+                                        44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1
+                                        0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5
+                                        10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7
+                                        11.8 47.1 19.5 64 19.5 29.2 0 31.2-32
+                                        19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279
+                                        7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1
+                                        255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8
+                                        9z"
+                    ></path></svg></span
+                >PDF</a
+              >
+              <span class="linksep">/</span>
+              <span class="bibtexcollapsible">BibTeX</span>
+              <div class="bibtexcontent">
+                <pre>
+@article{chawla2018accurate,
+  title={An accurate real-time RFID-based location system},
+  author={Chawla, Kirti and McFarland, Christopher and Robins, Gabriel and Thomason, Wil},
+  journal={International Journal of Radio Frequency Identification Technology and Applications},
+  volume={5},
+  number={1},
+  pages={48--76},
+  year={2018},
+  publisher={Inderscience Publishers (IEL)}
+}</pre
+                >
+              </div>
             </dd>
           </dl>
           <h1 id="workshop-presentations">Workshop Presentations</h1>
@@ -232,9 +394,9 @@
       <ul>
         <li>
           Website design inspired by the websites of
-          <a href="https://www.cs.cornell.edu/~molly/">Molly Q Feldman</a>
-          and
-          <a href="https://www.cs.cornell.edu/~cliang/">Claire Liang</a>
+          <a href="https://www.cs.cornell.edu/~molly/">Molly Q Feldman</a>,
+          <a href="https://www.cs.cornell.edu/~cliang/">Claire Liang</a>, and
+          <a href="http://zkingston.com/">Zak Kingston</a>
         </li>
       </ul>
     </footer>
