@@ -1,0 +1,34 @@
+[[presentations]]
+year = "2019"
+title = "A Flexible Sampling-Based Approach to Task and Motion Planning"
+authors = "Thomason, Wil and Knepper, Ross A."
+workshop_name = "Workshop on Robust Task and Motion Planning"
+workshop_venue = "Robotics: Science and Systems (RSS)"
+workshop_url = "http://dyalab.mines.edu/2019/rss-workshop/"
+pdf_path = "rss2019_workshop_flexible_sampling_tamp.pdf"
+
+[[presentations]]
+year = "2017"
+title = "Exploiting Heterogeneity in Robot Teams Through a Formalism of Capabilities"
+authors = "Thomason, Wil and Knepper, Ross A."
+workshop_name = "Workshop on Heterogeneity and Diversity for Resilience in Multi-Robot Systems"
+workshop_venue = "Robotics: Science and Systems (RSS)"
+pdf_path = "rss2017_workshop_heterogeneous_coordination.pdf"
+
+[[presentations]]
+year = "2017"
+title = "Toward Contextual Grounding of Unfamiliar Gestures for Human-Robot Interaction"
+authors = "Thomason, Wil and Knepper, Ross A."
+workshop_name = "first International Workshop on Adaptive Shot Learning for Gesture Understanding and Production"
+workshop_venue = "the IEEE International Conference on Automatic Face and Gesture Recognition (FG)"
+workshop_url = "https://engineering.purdue.edu/ASL4GUP/"
+pdf_path = "asl4gup2017_unfamiliargestures.pdf"
+
+[[presentations]]
+year = "2016"
+title = "Recognizing Unfamiliar Gestures for Human-Robot Interaction through Zero-Shot Learning"
+authors = "Thomason, Wil and Knepper, Ross A."
+workshop_name = "the 2nd Workshop on Model Learning for Human-Robot Communication"
+workshop_venue = "Robotics: Science and Systems (RSS)"
+workshop_url = "http://www.ece.rochester.edu/projects/rail/mlhrc2016/"
+pdf_url = "http://www.ece.rochester.edu/projects/rail/mlhrc2016/papers/mlhrc-rss16-thomason.pdf"

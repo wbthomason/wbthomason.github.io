@@ -19,11 +19,12 @@
 {{ _authors | join(sep=authsep) | markdown(inline=true) | safe }}.
 {% endmacro authorlist %}
 {% macro rawbibtex(paper) %}
-@{{ paper.entry_type | safe }}{% raw %}{{% endraw %}{{ paper.citation_key | safe }},{% for tag, val in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" %}{% continue %}{% endif %}
+@{{ paper.entry_type | safe }}{% raw %}{{% endraw %}{{ paper.citation_key | safe }},{% for tag, val
+in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or tag == "pdf" or tag == "acceptance" or tag == "conference" or tag == "note" %}{% continue %}{% endif %}
   {{ tag | safe }} = {% raw %}{{% endraw %}{{ val | safe }}{% raw %}}{% endraw %}{% if not loop.last %},{% endif %}{% endfor %}}
 }{% endmacro %}
 {% block content %}
-<script src="js/collapsible_bibtex.js"></script>
+<script src="{{ get_url(path="js/collapsible_bibtex.js") }}"></script>
 {% set pubs = load_data(path="@/publications/publications.bib", format="bibtex") %}
 {% set_global conference_articles = pubs.bibliographies | filter(attribute="entry_type", value="inproceedings") %}
 {% set_global journal_articles = pubs.bibliographies | filter(attribute="entry_type", value="article") %}
@@ -49,20 +50,33 @@
       <b>“{{ paper.tags.title | replace(from="{{", to="") | replace(from="}}", to="") }}”</b>
     </dt>
     <dd>
+      <div class="pubinfo">
       {{ self::authorlist(authors=paper.tags.author) }}
       {% if paper.tags.conference %}
+      <br/>
       <span>Presented at {{ paper.tags.conference }}.</span>
-      <span>Published in {{ paper.tags.journaltitle | replace(from="{{", to="") | replace(from="}}", to="") }}, {{ paper_year }}.</span>
+      <span>Published in {{ paper.tags.journaltitle | replace(from="{{", to="") | replace(from="}}", to="") }}.</span>
       {% else %}
-      <span>{{ paper.tags.booktitle | replace(from="{{", to="") | replace(from="}}", to="") }}, {{ paper_year }}.</span>
+      <span>{{ paper.tags.booktitle | replace(from="{{", to="") | replace(from="}}", to="") }}.</span>
+      {% endif %}
+      {% if paper.tags.review %}
+      <span class="pub-review">(under review)</span>
+      {% endif %}
+      {% if paper.tags.acceptance %}
+      <span class="pub-acceptance">Acceptance rate: {{ paper.tags.acceptance }}%</span>
       {% endif %}
       {% if paper.tags.note %}
+      <br/>
       {{ paper.tags.note }}
       {% endif %}
-      <br />
-      <a class="paperlink" href="{{ paper.tags.url }}">PDF</a>
+      </div>
+      {% if paper.tags.pdf %}
+      <a class="paperlink" href="{{ paper.tags.pdf }}">pdf</a>
       <span class="linksep">/</span>
-      <span class="bibtexcollapsible">BibTeX</span>
+      {% endif %}
+      <a class="paperlink" href="{{ paper.tags.url }}">publisher</a>
+      <span class="linksep">/</span>
+      <span class="bibtexcollapsible">bibtex</span>
       <div class="bibtexcontent">
         <pre>{{ self::rawbibtex(paper=paper)}}</pre>
       </div>
@@ -90,14 +104,22 @@
     </dt>
     <dd>
       {{ self::authorlist(authors=paper.tags.author) }}
-      <span>{{ paper.tags.journaltitle | replace(from="{{", to="") | replace(from="}}", to="") }}, {{ paper_year }}.</span>
+      <span>{{ paper.tags.journaltitle | replace(from="{{", to="") | replace(from="}}", to="") }}.</span>
+      {% if paper.tags.review %}
+      <span class="pub-review">(under review)</span>
+      {% endif %}
       {% if paper.tags.note %}
+      <br/>
       {{ paper.tags.note }}
       {% endif %}
       <br />
-      <a class="paperlink" href="{{ paper.tags.url }}">PDF</a>
+      {% if paper.tags.pdf %}
+      <a class="paperlink" href="{{ paper.tags.pdf }}">pdf</a>
       <span class="linksep">/</span>
-      <span class="bibtexcollapsible">BibTeX</span>
+      {% endif %}
+      <a class="paperlink" href="{{ paper.tags.url }}">publisher</a>
+      <span class="linksep">/</span>
+      <span class="bibtexcollapsible">bibtex</span>
       <div class="bibtexcontent">
         <pre>{{ self::rawbibtex(paper=paper)}}</pre>
       </div>
@@ -106,4 +128,49 @@
 </dl>
 {% endfor %}
 </div>
+
+<h1>Workshop Presentations</h1>
+  {% set workshops = load_data(path="@/publications/workshops.toml") %}
+<div class="pubs">
+  {% set_global year = "0" %}
+  {% for presentation in workshops.presentations | sort(attribute="year") | reverse %}
+  {% if year != presentation.year %}
+  {% set_global year = presentation.year %}
+  <div class="pubyear">{{presentation.year}}</div>
+  {% else %}
+  <div class="pubyear"></div>
+  {% endif %}
+  <dl class="pubdata">
+    <div class="pubitem">
+      <dt class="pubtitle">
+        <b>“{{ presentation.title }}”</b>
+      </dt>
+      <dd>
+        {{ self::authorlist(authors=presentation.authors) }} 
+        Presented at the 
+        {% if presentation.workshop_url %}
+        <a href="{{ presentation.workshop_url }}">{{ presentation.workshop_name }}</a>
+        {% else %}
+        <span>{{ presentation.workshop_name }}</span>
+        {% endif %}
+        at {{ presentation.workshop_venue }}
+        {% if presentation.pdf_path or presentation.pdf_url %}
+        <br />
+        <a class="paperlink"
+          {% if presentation.pdf_path %}
+          href="{{ get_url(path="papers/" ~ presentation.pdf_path) }}"
+          {% else %}
+          href="{{ presentation.pdf_url }}"
+          {% endif %}
+          >pdf</a>
+        {% endif %}
+      </dd>
+    </div>
+  </dl>
+  {% endfor %}
+</div>
+
+<h1>Grants</h1>
+
+<h1>Class Notes</h1>
 {% endblock content %}

@@ -1,6 +1,14 @@
+.pub-review {
+  font-style: italic;
+}
+
+.pub-acceptance {
+  font-weight: bold;
+}
+
 .pubs {
   display: grid;
-  grid-template-columns: 1fr 20fr;
+  grid-template-columns: 1fr fit-content(100%);
   gap: 1em;
   justify-items: left;
 }
@@ -8,7 +16,7 @@
 .pubyear {
   color: #a1a1a1;
   grid-column: 1;
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 
 .news {
@@ -298,6 +306,7 @@ dt.pubtitle {
   margin-bottom: 0.2rem;
 }
 .pubdata {
+  overflow: hidden;
   grid-column: 2;
   margin-top: 0;
   margin-bottom: 0;
