@@ -1,0 +1,113 @@
+[[events]]
+date = 2016-05-01
+event = """
+My paper ["Zero-Shot Learning for Unfamiliar Gesture Recognition"](papers/iser2016_unfamiliargestures.pdf) was accepted to ISER 2016
+"""
+
+[[events]]
+date = 2016-06-01
+event = """
+I presented my workshop paper ["Recognizing Unfamiliar Gestures for Human-Robot Interaction through Zero-Shot Learning"](http://www.ece.rochester.edu/projects/rail/mlhrc2016/papers/mlhrc-rss16-thomason.pdf) at RSS 2016 in the [2nd Workshop on Model Learning for Human-Robot Communication](http://www.ece.rochester.edu/projects/rail/mlhrc2016/)
+"""
+
+[[events]]
+date = 2016-10-01
+event = """
+I presented my paper ["Zero-Shot Learning for Unfamiliar Gesture Recognition"](papers/iser2016_unfamiliargestures.pdf) at ISER 2016
+"""
+
+[[events]]
+date = 2017-03-01
+event = """
+I was awarded the [NSF GRFP Fellowship](https://www.nsfgrfp.org/)
+"""
+
+[[events]]
+date = 2017-04-01
+event = """
+I was awarded the [NDSEG Fellowship](https://ndseg.asee.org/)
+"""
+
+[[events]]
+date = 2017-07-01
+event = """
+I presented my workshop paper ["Exploiting Heterogeneity in Robot Teams Through a Formalism of Capabilities"](https://www.seas.upenn.edu/~prorok/rss2017/papers/Thomason_RSS-Workshop_ExtAbstract.pdf) at RSS 2017 in the workshop on [Heterogeneity and Diversity for Resilience in Multi-Robot Systems](https://www.seas.upenn.edu/~prorok/rss2017/)
+"""
+
+[[events]]
+date = 2017-11-01
+event = """
+My paper with {{namelink(name="Christoforos Mavrogiannis", link="https://chrismavrogiannis.com/")}} and {{namelink(name="Ross Knepper", link="https://rossknepper.com/")}}, ["Social Momentum: A Framework for Legible Navigation in Dynamic Multi-Agent Environments"](http://www.cmavrogiannis.com/docs/mavrogiannis_hri18_preprint.pdf), was accepted to HRI 2018
+"""
+
+[[events]]
+date = 2019-06-01
+event = """
+I passed my A Exam, presenting on “An Efficient, Flexible Sampling-Based Approach to Integrated Task and Motion Planning”. I’m now a PhD candidate
+"""
+
+[[events]]
+date = 2019-06-01
+event = """
+My workshop paper with {{namelink(name="Ross Knepper", link="https://rossknepper.com/")}}, “A Flexible Sampling-Based Approach to Task and Motion Planning”, will be presented at RSS 2019 in the [Robust Task and Motion Planning](http://dyalab.mines.edu/2019/rss-workshop/) workshop
+"""
+
+[[events]]
+date = 2019-07-01
+event = """
+My paper with {{namelink(name="Ross Knepper", link="https://rossknepper.com/")}}, ["A Unified Sampling-Based Approach to Integrated Task and Motion Planning"](papers/isrr2019_unifiedtamp.pdf) was accepted to ISRR 2019
+"""
+
+[[events]]
+date = 2020-04-01
+event = """
+I was accepted to the 2020 [RSS Pioneers](https://sites.google.com/view/rsspioneers2020) workshop (**_33.7% acceptance rate_**)
+"""
+
+[[events]]
+date = 2020-07-01
+event = """
+I will be helping to organize [RSS Pioneers 2021](https://sites.google.com/view/rsspioneers2021) as a member of the Faculty Committee
+"""
+
+[[events]]
+date = 2021-07-11
+event = """
+I helped to organize and run the [RSS Pioneers 2021](https://sites.google.com/view/rsspioneers2021)
+"""
+
+[[events]]
+date = 2021-07-15
+event = """
+I have been awarded the [CRA CIFellows 2021 postdoctoral fellowship](https://cifellows2021.org/2021-class/) to conduct a 2-year postdoctoral appointment with {{namelink(name="Professor Lydia Kavraki", link="http://kavrakilab.org/")}}
+"""
+
+[[events]]
+date = 2021-08-01
+event = """
+I successfully defended my [PhD](https://ecommons.cornell.edu/items/1084c492-e655-4f20-a43e-6c87c2cda4b9)!
+"""
+
+[[events]]
+date = 2022-01-01
+event = """
+I've started at the [Kavraki Lab](https://kavrakilab.org)
+"""
+
+[[events]]
+date = 2022-07-01
+event = """
+My paper with {{namelink(name="Marlin Strub", link="https://www-robotics.jpl.nasa.gov/who-we-are/people/marlin-strub/")}} and {{namelink(name="Jon Gammell", link="https://robotic-esp.com/people/gammell/")}}, [Task and Motion Informed Trees (TMIT*): Almost-Surely Asymptotically Optimal Integrated Task and Motion Planning](https://arxiv.org/abs/2210.09367), has been accepted to IEEE RA-L and IROS 2022
+"""
+
+[[events]]
+date = 2022-10-01
+event = """
+I'm organizing and running the [Workshop on Evaluating Motion Planning Performance](https://motion-planning-workshop.kavrakilab.org/) at [IROS 2022](https://iros2022.org/). Come by on Oct. 23!
+"""
+
+[[events]]
+date = 2023-09-01
+event = """
+I remembered to update my website after a year!
+"""
