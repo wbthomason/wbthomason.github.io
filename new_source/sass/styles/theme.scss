@@ -1,7 +1,7 @@
 .pubs {
   display: grid;
   grid-template-columns: 1fr 20fr;
-  gap: 0.5em;
+  gap: 1em;
   justify-items: left;
 }
 
@@ -300,9 +300,7 @@ dt.pubtitle {
 .pubdata {
   grid-column: 2;
   margin-top: 0;
-}
-.pubitem {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 .wrap {
   margin-right: auto;
