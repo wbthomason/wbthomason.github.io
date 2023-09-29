@@ -1,3 +1,16 @@
+.pubs {
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  gap: 0.5em;
+  justify-items: left;
+}
+
+.pubyear {
+  color: #a1a1a1;
+  grid-column: 1;
+  margin-right: 1em;
+}
+
 .news {
   display: grid;
   grid-template-columns: 1fr 6fr;
@@ -285,7 +298,8 @@ dt.pubtitle {
   margin-bottom: 0.2rem;
 }
 .pubdata {
-  width: max-content;
+  grid-column: 2;
+  margin-top: 0;
 }
 .pubitem {
   margin-bottom: 1rem;

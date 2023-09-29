@@ -25,9 +25,24 @@
 {% block content %}
 <script src="js/collapsible_bibtex.js"></script>
 {% set pubs = load_data(path="@/publications/publications.bib", format="bibtex") %}
+{% set_global conference_articles = pubs.bibliographies | filter(attribute="entry_type", value="inproceedings") %}
+{% set_global journal_articles = pubs.bibliographies | filter(attribute="entry_type", value="article") %}
+{% for article in journal_articles %}
+{% if article.tags.conference %}
+{% set_global conference_articles = conference_articles | concat(with=article) %}
+{% endif %}
+{% endfor %}
 <h1>Conference Publications</h1>
-{% set conference_articles = pubs.bibliographies | filter(attribute="entry_type", value="inproceedings") %}
+<div class="pubs">
+{% set_global year = "0" %}
 {% for paper in conference_articles | sort(attribute="tags.date") | reverse %}
+{% set paper_year = paper.tags.date | split(pat="-") | nth(n=0) %}
+{% if year != paper_year %}
+{% set_global year = paper_year %}
+<div class="pubyear">{{paper_year}}</div>
+{% else %}
+<div class="pubyear"></div>
+{% endif %}
 <dl class="pubdata">
   <div class="pubitem">
     <dt class="pubtitle">
@@ -35,6 +50,12 @@
     </dt>
     <dd>
       {{ self::authorlist(authors=paper.tags.author) }}
+      {% if paper.tags.conference %}
+      <span>Presented at {{ paper.tags.conference }}.</span>
+      <span>Published in {{ paper.tags.journaltitle | replace(from="{{", to="") | replace(from="}}", to="") }}, {{ paper_year }}.</span>
+      {% else %}
+      <span>{{ paper.tags.booktitle | replace(from="{{", to="") | replace(from="}}", to="") }}, {{ paper_year }}.</span>
+      {% endif %}
       {% if paper.tags.note %}
       {{ paper.tags.note }}
       {% endif %}
@@ -48,4 +69,41 @@
     </dd>
   </div>
 </dl>
-{% endfor %}{% endblock content %}
+{% endfor %}
+</div>
+
+<h1>Journal Publications</h1>
+<div class="pubs">
+{% set_global year = "0" %}
+{% for paper in journal_articles | sort(attribute="tags.date") | reverse %}
+{% set paper_year = paper.tags.date | split(pat="-") | nth(n=0) %}
+{% if year != paper_year %}
+{% set_global year = paper_year %}
+<div class="pubyear">{{paper_year}}</div>
+{% else %}
+<div class="pubyear"></div>
+{% endif %}
+<dl class="pubdata">
+  <div class="pubitem">
+    <dt class="pubtitle">
+      <b>“{{ paper.tags.title | replace(from="{{", to="") | replace(from="}}", to="") }}”</b>
+    </dt>
+    <dd>
+      {{ self::authorlist(authors=paper.tags.author) }}
+      <span>{{ paper.tags.journaltitle | replace(from="{{", to="") | replace(from="}}", to="") }}, {{ paper_year }}.</span>
+      {% if paper.tags.note %}
+      {{ paper.tags.note }}
+      {% endif %}
+      <br />
+      <a class="paperlink" href="{{ paper.tags.url }}">PDF</a>
+      <span class="linksep">/</span>
+      <span class="bibtexcollapsible">BibTeX</span>
+      <div class="bibtexcontent">
+        <pre>{{ self::rawbibtex(paper=paper)}}</pre>
+      </div>
+    </dd>
+  </div>
+</dl>
+{% endfor %}
+</div>
+{% endblock content %}
