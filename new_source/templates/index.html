@@ -6,10 +6,10 @@
 {{ section.content | safe }}
 <h1 id="news">News</h1>
 <div class="news">
-  {% set news = get_section(path=section.subsections[0]) %}
-  {% for page in news.pages %}
-  <div class="news-date">{{ page.date | date(format="%b %Y") }}</div>
-  <div class="news-item">{{ load_data(path=page.relative_path) | replace(from="+++", to="") | markdown(inline=true) | safe }}</div>
+  {% set news = load_data(path="@/news.toml") %}
+  {% for event in news.events | sort(attribute="date") | reverse %}
+  <div class="news-date">{{ event.date | date(format="%b %Y") }}</div>
+  <div class="news-item">{{ event.event | markdown(inline=true) | safe }}</div>
   {% endfor %}
 </div>
 <h1 id="outreach">Service and Outreach</h1>

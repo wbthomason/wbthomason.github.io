@@ -1,7 +1,7 @@
 base_url = "https://wbthomason.github.io"
 compile_sass = true
 build_search_index = false
-ignored_content = ["**/publications.bib"]
+ignored_content = ["**/*.bib", "**/*.toml"]
 
 [markdown]
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
