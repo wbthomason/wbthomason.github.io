@@ -10,5 +10,7 @@ function setup_collapsibles() {
         content.style.display = "block";
       }
     });
-  };
+  }
 }
+
+window.addEventListener("load", setup_collapsibles, false);

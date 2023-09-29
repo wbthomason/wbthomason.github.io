@@ -267,14 +267,14 @@ a.paperlink {
 .bibtexcontent {
   padding: 0 10px;
   display: none;
-  overflow: hidden;
+  overflow: scroll;
   font-family: "Fira Code", monospace;
-  font-size: 0.85em;
+  font-size: smaller;
   color: #737373;
 }
 .bibtexcontent > pre {
   margin: 0;
-  white-space: pre-wrap;
+  white-space: pre;
 }
 .pubitem > dd,
 .wrap {

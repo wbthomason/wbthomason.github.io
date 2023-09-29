@@ -18,6 +18,10 @@
 {% endif %}
 {{ _authors | join(sep=authsep) | markdown(inline=true) | safe }}.
 {% endmacro authorlist %}
+{% macro rawbibtex(paper) %}
+@{{ paper.entry_type | safe }}{% raw %}{{% endraw %}{{ paper.citation_key | safe }},{% for tag, val in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" %}{% continue %}{% endif %}
+  {{ tag | safe }} = {% raw %}{{% endraw %}{{ val | safe }}{% raw %}}{% endraw %}{% if not loop.last %},{% endif %}{% endfor %}}
+}{% endmacro %}
 {% block content %}
 <script src="js/collapsible_bibtex.js"></script>
 {% set pubs = load_data(path="@/publications/publications.bib", format="bibtex") %}
@@ -27,32 +31,19 @@
 <dl class="pubdata">
   <div class="pubitem">
     <dt class="pubtitle">
-      <b>"{{ paper.tags.title | replace(from="{{", to="") | replace(from="}}", to="") }}"</b>
+      <b>“{{ paper.tags.title | replace(from="{{", to="") | replace(from="}}", to="") }}”</b>
     </dt>
     <dd>
       {{ self::authorlist(authors=paper.tags.author) }}
       {% if paper.tags.note %}
       {{ paper.tags.note }}
       {% endif %}
-      Presented at IROS 2022. Published in IEEE Robotics and Automation Letters
-      (RA-L), 2022.
       <br />
-      <a class="paperlink" href="../papers/ral_iros2022_tmitstar.pdf">PDF</a>
+      <a class="paperlink" href="{{ paper.tags.url }}">PDF</a>
       <span class="linksep">/</span>
       <span class="bibtexcollapsible">BibTeX</span>
       <div class="bibtexcontent">
-        <pre>
-          @article{thomason_tmit_star_2022,
-          author={Thomason, Wil and Strub, Marlin P. and Gammell, Jonathan D.},
-          journal={IEEE Robotics and Automation Letters},
-          title={Task and Motion Informed Trees (TMIT*): Almost-Surely Asymptotically Optimal Integrated Task and Motion
-          Planning},
-          year={2022},
-          volume={7},
-          number={4},
-          pages={11370-11377},
-          doi={10.1109/LRA.2022.3199676}}
-        </pre>
+        <pre>{{ self::rawbibtex(paper=paper)}}</pre>
       </div>
     </dd>
   </div>
