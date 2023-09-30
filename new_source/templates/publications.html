@@ -1,15 +1,19 @@
 {% extends "base.html" %}
-{% macro authorlist(authors) %}
+{% macro authorlist(authors, filter=false) %}
 {% set_global _authors = [] %}
 {% for author in authors | split(pat=" and ") %}
 {% set name = author | split(pat=",") | reverse | join(sep=" ") | trim %}
-{% if name == "Wil Thomason" or name == "Wil B. Thomason" %}
+{% set is_me = false %}
+{% if name == "Wil Thomason" or name == "Wil B. Thomason" or name == "Wil Thomason*" %}
+{% set is_me = true %}
 {% set name = "**" ~ name ~ "**" %}
 {% endif %}
 {% if loop.last %}
 {% set name = "and " ~ name %}
 {% endif %}
+{% if not filter or not is_me %}
 {% set_global _authors = _authors | concat(with=name) %}
+{% endif %}
 {% endfor %}
 {% if _authors | length == 2 %}
 {% set authsep = " " %}
@@ -74,8 +78,10 @@ in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or ta
       <a class="paperlink" href="{{ paper.tags.pdf }}">pdf</a>
       <span class="linksep">/</span>
       {% endif %}
+      {% if not paper.tags.review %}
       <a class="paperlink" href="{{ paper.tags.url }}">publisher</a>
       <span class="linksep">/</span>
+      {% endif %}
       <span class="bibtexcollapsible">bibtex</span>
       <div class="bibtexcontent">
         <pre>{{ self::rawbibtex(paper=paper)}}</pre>
@@ -130,7 +136,7 @@ in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or ta
 </div>
 
 <h1>Workshop Presentations</h1>
-  {% set workshops = load_data(path="@/publications/workshops.toml") %}
+{% set workshops = load_data(path="@/publications/workshops.toml") %}
 <div class="pubs">
   {% set_global year = "0" %}
   {% for presentation in workshops.presentations | sort(attribute="year") | reverse %}
@@ -171,6 +177,47 @@ in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or ta
 </div>
 
 <h1>Grants</h1>
+{% set grants = load_data(path="@/publications/grants.toml") %}
+<div class="pubs">
+  {% for grant in grants.grants %}
+   <div class="pubyear">{{ grant.agency }}<br/>#{{ grant.number }}</div>
+  <dl class="pubdata">
+    <div class="pubitem">
+      <dt class="pubtitle">
+        <b>“{{ grant.title }}”</b>
+      </dt>
+      <dd>
+        {% if grant.coauthor %}
+        Co-author with 
+        {{ self::authorlist(authors=grant.authors, filter=true) }} 
+        {% else %}
+        {{ self::authorlist(authors=grant.authors) }} 
+        {% endif %}
+        <br />
+        <a class="paperlink" href="{{ grant.url }}">award</a>
+      </dd>
+    </div>
+  </dl>
+  {% endfor %}
+</div>
 
 <h1>Class Notes</h1>
+{% set courses = load_data(path="@/publications/courses.toml") %}
+<div class="pubs">
+  {% for course in courses.courses %}
+  <div class="pubyear">{{ course.year }}</div>
+  <dl class="pubdata">
+    <div class="pubitem">
+      <dt class="pubtitle">
+        <b>{{ course.name }}</b>
+      </dt>
+      <dd>
+        {{ self::authorlist(authors=course.authors) }} 
+        <br />
+        <a class="paperlink" href="{{ course.url }}">course page</a>
+      </dd>
+    </div>
+  </dl>
+  {% endfor %}
+</div>
 {% endblock content %}
