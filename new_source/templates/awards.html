@@ -1,4 +1,40 @@
 {% extends "base.html" %}
 {% block content %}
-Howdy
+{% set awards = load_data(path="@/awards/awards.toml") %}
+<h1>Research</h1>
+<div class="awards">
+  {% set_global year = "0" %}
+  {% for award in awards.awards | filter(attribute="is_research", value=true) | sort(attribute="date") | reverse %}
+  {% set award_year = award.date | split(pat="-") | nth(n=0) %}
+  {% if year != award_year %}
+  {% set_global year = award_year %}
+  <div class="pubyear">{{award_year}}</div>
+  {% else %}
+  <div class="pubyear"></div>
+  {% endif %}
+  <div class="pubitem">
+    <a href="{{ award.url }}">{{ award.name }}</a>
+      {% if award.accepted %}
+      (<strong>Accepted</strong>)
+      {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<h1>Teaching</h1>
+<div class="awards">
+  {% set_global year = "0" %}
+  {% for award in awards.awards | filter(attribute="is_teaching", value=true) | sort(attribute="date") | reverse %}
+  {% set award_year = award.date | split(pat="-") | nth(n=0) %}
+  {% if year != award_year %}
+  {% set_global year = award_year %}
+  <div class="pubyear">{{award_year}}</div>
+  {% else %}
+  <div class="pubyear"></div>
+  {% endif %}
+    <div class="pubdata pubitem">
+      {{ award.text | markdown(inline=true) | safe }}
+    </div>
+  {% endfor %}
+</div>
 {% endblock content %}

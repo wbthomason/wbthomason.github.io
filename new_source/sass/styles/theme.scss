@@ -13,6 +13,14 @@
   justify-items: left;
 }
 
+.awards {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  justify-items: left;
+  gap: 0.5em;
+}
+
 .pubyear {
   color: #a1a1a1;
   grid-column: 1;
@@ -297,7 +305,7 @@ a.paperlink {
   margin: 0;
   white-space: pre;
 }
-.pubitem > dd,
+.pubitem > dd, .pubitem > li
 .wrap {
   margin-left: auto;
 }

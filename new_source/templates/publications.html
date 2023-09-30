@@ -24,7 +24,7 @@
 {% endmacro authorlist %}
 {% macro rawbibtex(paper) %}
 @{{ paper.entry_type | safe }}{% raw %}{{% endraw %}{{ paper.citation_key | safe }},{% for tag, val
-in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or tag == "pdf" or tag == "acceptance" or tag == "conference" or tag == "note" %}{% continue %}{% endif %}
+in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or tag == "pdf" or tag == "acceptance" or tag == "conference" or tag == "note" or tag == "review" %}{% continue %}{% endif %}
   {{ tag | safe }} = {% raw %}{{% endraw %}{{ val | safe }}{% raw %}}{% endraw %}{% if not loop.last %},{% endif %}{% endfor %}}
 }{% endmacro %}
 {% block content %}
@@ -60,7 +60,7 @@ in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or ta
       <br/>
       <span>Presented at {{ paper.tags.conference }}.</span>
       <span>Published in {{ paper.tags.journaltitle | replace(from="{{", to="") | replace(from="}}", to="") }}.</span>
-      {% else %}
+      {% elif paper.tags.booktitle %}
       <span>{{ paper.tags.booktitle | replace(from="{{", to="") | replace(from="}}", to="") }}.</span>
       {% endif %}
       {% if paper.tags.review %}

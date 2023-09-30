@@ -1,0 +1,40 @@
+[[awards]]
+is_research = true
+accepted = true
+date = 2021-07-01
+name = "CRA CIFellows 2021"
+url = "https://cifellows2021.org/2021-class/"
+
+[[awards]]
+is_research = true
+accepted = true
+date = 2017-04-01
+name = "NDSEG Fellowship"
+url = "https://ndseg.asee.org/"
+
+[[awards]]
+is_research = true
+date = 2017-03-01
+name = "NSF GRFP Fellowship"
+url = "https://www.nsfgrfp.org/"
+
+[[awards]]
+is_research = true
+date = 2016-03-01
+name = "NSF GRFP Honorable Mention"
+url = "https://www.nsfgrfp.org/"
+
+[[awards]]
+is_teaching = true
+date = 2017-05-01
+text = "Outstanding Teaching Assistant Award for my work on Cornell’s [Foundations of Robotics](http://www.cs.cornell.edu/courses/cs4750/2016fa/) course"
+
+[[awards]]
+is_teaching = true
+date = 2016-05-01
+text = "Outstanding Teaching Assistant Award for my work on Cornell’s [Introductory CS](http://www.cs.cornell.edu/courses/cs1110/2015fa/) course"
+
+[[awards]]
+is_teaching = true
+date = 2015-05-01
+text = "Louis T. Rader Outstanding Education Undergraduate Student Award for my work as a teaching assistant for the University of Virginia's Computer Science department"

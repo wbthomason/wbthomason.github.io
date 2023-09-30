@@ -10,7 +10,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <title>wil thomason</title>
+    <title>wil thomason{% if section.title %} · {{ section.title }} {% endif %}</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ get_url(path="styles/theme.css") }}"/>
@@ -25,7 +25,7 @@
     <div class="wrap">
       <div class="masthead-contents" id="mh-contents">
         <h1 class="masthead-title">
-          <a href="/" title="Home">wil thomason</a>
+          <a href="/" title="Home">wil thomason{% if section.title %} / {{ section.title }} {% endif %}</a>
         </h1>
         <div class="masthead">
           <figure class="about-photo">
