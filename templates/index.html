@@ -10,8 +10,15 @@
 <h1 id="news">News</h1>
 <div class="news">
   {% set news = load_data(path="@/news.toml") %}
+  {% set_global last_date = "0" %}
   {% for event in news.events | sort(attribute="date") | reverse %}
-  <div class="news-date">{{ event.date | date(format="%b %Y") }}</div>
+  {% set event_date = event.date | date(format="%b %Y") %}
+  {% if last_date != event_date %}
+  {% set_global last_date = event_date %}
+    <div class="news-date">{{ event_date }}</div>
+  {% else %}
+  <div class="news-date"></div>
+  {% endif %}
   <div class="news-item">{{ event.event | markdown(inline=true) | safe }}</div>
   {% endfor %}
 </div>
