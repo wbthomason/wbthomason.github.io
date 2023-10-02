@@ -8,7 +8,7 @@
 
 .pubs {
   display: grid;
-  grid-template-columns: 1fr fit-content(100%);
+  grid-template-columns: 1fr 10fr;
   gap: 1em;
   justify-items: left;
 }
