@@ -107,6 +107,12 @@ I'm organizing and running the [Workshop on Evaluating Motion Planning Performan
 """
 
 [[events]]
+date = 2023-07-07
+event = """
+I've been invited to participate in the NSF-sponsored [Workshop on Software Engineering for Robotic Systems](https://se4robotics.github.io/) at IROS 2023.
+"""
+
+[[events]]
 date = 2023-09-01
 event = """
 I have a new preprint with {{namelink(name="Carlos Quintero-Peña", link="https://carlosquinterop.github.io/")}}, {{namelink(name="Zak Kingston", link="https://zkingston.com/")}}, and {{namelink(name="Lydia Kavraki", link="http://kavrakilab.org/")}} on [risk-minimizing motion planning under uncertainty using a learned implicit distance model](https://arxiv.org/abs/2309.16862). 
