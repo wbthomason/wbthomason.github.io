@@ -31,10 +31,18 @@ in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or ta
 <script src="{{ get_url(path="js/collapsible_bibtex.js") }}"></script>
 {% set pubs = load_data(path="@/publications/publications.bib", format="bibtex") %}
 {% set_global conference_articles = pubs.bibliographies | filter(attribute="entry_type", value="inproceedings") %}
+{% set_global preprint_articles = pubs.bibliographies | filter(attribute="entry_type", value="online") %}
 {% set_global journal_articles = pubs.bibliographies | filter(attribute="entry_type", value="article") %}
 {% for article in journal_articles %}
 {% if article.tags.conference %}
 {% set_global conference_articles = conference_articles | concat(with=article) %}
+{% endif %}
+{% endfor %}
+{% for article in preprint_articles %}
+{% if article.tags.conference %}
+{% set_global conference_articles = conference_articles | concat(with=article) %}
+{% elif article.tags.journal %}
+{% set_global journal_articles = journal_articles | concat(with=article) %}
 {% endif %}
 {% endfor %}
 <h1>Conference Publications</h1>
@@ -56,7 +64,7 @@ in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or ta
     <dd>
       <div class="pubinfo">
       {{ self::authorlist(authors=paper.tags.author) }}
-      {% if paper.tags.conference %}
+      {% if paper.tags.conference and paper.entry_type is matching("inproceedings") %}
       <br/>
       <span>Presented at {{ paper.tags.conference }}.</span>
       <span>Published in {{ paper.tags.journaltitle | replace(from="{{", to="") | replace(from="}}", to="") }}.</span>
