@@ -82,26 +82,30 @@
 % ? Title looks like it was stored in title-case in Zotero
 % ? unused Library catalog ("ACM Digital Library")
 
-@inproceedings{quintero-pena_stochastic_implicit_2023,
+@online{quintero-pena_stochastic_implicit_2023,
   title = {Stochastic {{Implicit Neural Signed Distance Functions}} for {{Safe Motion Planning}} under {{Sensing Uncertainty}}},
   author = {Quintero-Peña, Carlos and Thomason, Wil and Kingston, Zachary and Kyrillidis, Anastasios and Kavraki, Lydia E.},
-  date = {2023-09-28},
+  date = {2023-09},
+  number = {2309.16862},
   eprint = {2309.16862},
   eprinttype = {arxiv},
   eprintclass = {cs},
-  publisher = {{arXiv}},
   doi = {10.48550/arXiv.2309.16862},
   url = {http://arxiv.org/abs/2309.16862},
   abstract = {Motion planning under sensing uncertainty is critical for robots in unstructured environments to guarantee safety for both the robot and any nearby humans. Most work on planning under uncertainty does not scale to high-dimensional robots such as manipulators, assumes simplified geometry of the robot or environment, or requires per-object knowledge of noise. Instead, we propose a method that directly models sensor-specific aleatoric uncertainty to find safe motions for high-dimensional systems in complex environments, without exact knowledge of environment geometry. We combine a novel implicit neural model of stochastic signed distance functions with a hierarchical optimization-based motion planner to plan low-risk motions without sacrificing path quality. Our method also explicitly bounds the risk of the path, offering trustworthiness. We empirically validate that our method produces safe motions and accurate risk bounds and is safer than baseline approaches.},
+  addendum = {Submitted to ICRA 2024},
+  conference = {ICRA 2024},
   pdf = {https://arxiv.org/pdf/2309.16862.pdf},
+  pubstate = {prepublished},
   review = {submitted},
   keywords = {Computer Science - Robotics,I.2.8,I.2.9},
   file = {/home/wil/Zotero/storage/SDZS3WCA/quintero-pena_stochastic_implicit_2023.pdf;/home/wil/Zotero/storage/HCU5W3N8/2309.html}
 }
 % == BibLateX quality report for quintero-pena_stochastic_implicit_2023:
+% Unexpected field 'number'
+% Unexpected field 'conference'
 % Unexpected field 'pdf'
 % Unexpected field 'review'
-% Missing required field 'booktitle'
 % ? Title looks like it was stored in title-case in Zotero
 
 @article{thomason_counterexampleguided_repair_2023,
@@ -132,7 +136,6 @@
   series = {Springer {{Proceedings}} in {{Advanced Robotics}}},
   pages = {841--852},
   publisher = {{Springer International Publishing}},
-  location = {{Cham}},
   doi = {10.1007/978-3-319-50115-4_73},
   url = {https://link.springer.com/chapter/10.1007/978-3-319-50115-4_73},
   abstract = {Human communication is highly multimodal, including speech, gesture, gaze, facial expressions, and body language. Robots serving as human teammates must act on such multimodal communicative inputs from humans, even when the message may not be clear from any single modality. In this paper, we explore a method for achieving increased understanding of complex, situated communications by leveraging coordinated natural language, gesture, and context. These three problems have largely been treated separately, but unified consideration of them can yield gains in comprehension~[1, 12].},
@@ -173,48 +176,49 @@
 % ? unused ISSN ("2377-3766")
 % ? unused Library catalog ("IEEE Xplore")
 
-@inproceedings{thomason_unified_samplingbased_2022,
+@inproceedings{thomason_unified_samplingbased_2019,
   title = {A {{Unified Sampling-Based Approach}} to {{Integrated Task}} and {{Motion Planning}}},
   booktitle = {International {{Symposium}} on {{Robotics Research}}},
   author = {Thomason, Wil and Knepper, Ross A.},
   editor = {Asfour, Tamim and Yoshida, Eiichi and Park, Jaeheung and Christensen, Henrik and Khatib, Oussama},
-  date = {2022},
+  date = {2019},
   series = {Springer {{Proceedings}} in {{Advanced Robotics}}},
   pages = {773--788},
   publisher = {{Springer International Publishing}},
-  location = {{Cham}},
   doi = {10.1007/978-3-030-95459-8_47},
   url = {https://link.springer.com/chapter/10.1007/978-3-030-95459-8_47},
   abstract = {We present a novel method for performing integrated task and motion planning (TMP) by adapting any off-the-shelf sampling-based motion planning algorithm to simultaneously solve for a symbolically and geometrically feasible plan using a single motion planner invocation. The core insight of our technique is an embedding of symbolic state into continuous space, coupled with a novel means of automatically deriving a function guiding a planner to regions of continuous space where symbolic actions can be executed. Our technique makes few assumptions and offers a great degree of flexibility and generality compared to state of the art planners. We describe our technique and offer a proof of probabilistic completeness along with empirical evaluation of our technique on manipulation benchmark problems.},
   langid = {english},
-  pdf = {https://wbthomason.github.io/papers/isrr2019_unifiedtamp.pdf}
+  pdf = {https://wbthomason.github.io/papers/isrr2019\_unifiedtamp.pdf}
 }
-% == BibLateX quality report for thomason_unified_samplingbased_2022:
+% == BibLateX quality report for thomason_unified_samplingbased_2019:
 % Unexpected field 'pdf'
 % ? Unsure about the formatting of the booktitle
 % ? Title looks like it was stored in title-case in Zotero
 % ? unused ISBN ("978-3-030-95459-8")
 % ? unused Library catalog ("Springer Link")
 
-@inproceedings{thomason*_motions_microseconds_2023,
+@online{thomason*_motions_microseconds_2023,
   title = {Motions in {{Microseconds}} via {{Vectorized Sampling-Based Planning}}},
   author = {Thomason*, Wil and Kingston*, Zachary and Kavraki, Lydia E.},
-  date = {2023-09-25},
+  date = {2023-09},
   eprint = {2309.14545},
   eprinttype = {arxiv},
   eprintclass = {cs},
-  publisher = {{arXiv}},
   doi = {10.48550/arXiv.2309.14545},
   url = {http://arxiv.org/abs/2309.14545},
   abstract = {Modern sampling-based motion planning algorithms typically take between hundreds of milliseconds to dozens of seconds to find collision-free motions for high degree-of-freedom problems. This paper presents performance improvements of more than 500x over the state-of-the-art, bringing planning times into the range of microseconds and solution rates into the range of kilohertz, without specialized hardware. Our key insight is how to exploit fine-grained parallelism within sampling-based planners, providing generality-preserving algorithmic improvements to any such planner and significantly accelerating critical subroutines, such as forward kinematics and collision checking. We demonstrate our approach over a diverse set of challenging, realistic problems for complex robots ranging from 7 to 14 degrees-of-freedom. Moreover, we show that our approach does not require high-power hardware by also evaluating on a low-power single-board computer. The planning speeds demonstrated are fast enough to reside in the range of control frequencies and open up new avenues of motion planning research.},
+  addendum = {Submitted to ICRA 2024},
+  conference = {ICRA 2024},
   pdf = {https://arxiv.org/pdf/2309.14545.pdf},
+  pubstate = {prepublished},
   review = {submitted},
   keywords = {Computer Science - Robotics,I.2.8,I.2.9},
-  note = {* signifies equal contribution},
+  note = {* signifies equal contribution.},
   file = {/home/wil/Zotero/storage/BGXIC7DH/thomason_motions_microseconds_2023.pdf;/home/wil/Zotero/storage/VDFEPV8W/2309.html}
 }
 % == BibLateX quality report for thomason*_motions_microseconds_2023:
+% Unexpected field 'conference'
 % Unexpected field 'pdf'
 % Unexpected field 'review'
-% Missing required field 'booktitle'
 % ? Title looks like it was stored in title-case in Zotero
