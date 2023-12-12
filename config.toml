@@ -1,4 +1,4 @@
-base_url = "https://wbthomason.github.io"
+base_url = "https://wbthomason.com"
 compile_sass = true
 build_search_index = false
 ignored_content = ["**/*.bib", "**/*.toml"]
