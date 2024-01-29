@@ -64,7 +64,7 @@ in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or ta
     <dd>
       <div class="pubinfo">
       {{ self::authorlist(authors=paper.tags.author) }}
-      {% if paper.tags.conference and paper.entry_type is matching("inproceedings") %}
+      {% if paper.tags.conference and paper.entry_type is matching("article") %}
       <br/>
       <span>Presented at {{ paper.tags.conference }}.</span>
       <span>Published in {{ paper.tags.journaltitle | replace(from="{{", to="") | replace(from="}}", to="") }}.</span>
@@ -78,7 +78,6 @@ in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or ta
       <span class="pub-acceptance">Acceptance rate: {{ paper.tags.acceptance }}%</span>
       {% endif %}
       {% if paper.tags.note %}
-      <br/>
       {{ paper.tags.note }}
       {% endif %}
       </div>
@@ -123,7 +122,6 @@ in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or ta
       <span class="pub-review">(under review)</span>
       {% endif %}
       {% if paper.tags.note %}
-      <br/>
       {{ paper.tags.note }}
       {% endif %}
       <br />
