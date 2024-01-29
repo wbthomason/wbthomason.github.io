@@ -123,3 +123,16 @@ date = 2023-09-02
 event = """
 I have a new preprint with {{namelink(name="Zak Kingston", link="https://zkingston.com/")}} and {{namelink(name="Lydia Kavraki", link="http://kavrakilab.org/")}} on [vector-accelerated sampling-based motion planning](https://arxiv.org/abs/2309.14545). 
 """
+
+[[events]]
+date = 2024-01-29
+event = """
+I had three papers accepted to [ICRA 2024](https://2024.ieee-icra.org/)!
+- [“Motions in Microseconds via Vectorized Sampling-Based Planning”](https://arxiv.org/abs/2309.14545), with {{namelink(name="Zak Kingston", link="https://zkingston.com/")}} and {{namelink(name="Lydia Kavraki", link="http://kavrakilab.org/")}}
+- [“Stochastic Implicit Neural Signed Distance Functions for Safe Motion Planning under Sensing
+Uncertainty”](https://arxiv.org/abs/2309.16862), with {{namelink(name="Carlos Quintero-Peña",
+link="https://carlosquinterop.github.io/")}}, {{namelink(name="Zak Kingston", link="https://zkingston.com/")}}, and {{namelink(name="Lydia Kavraki", link="http://kavrakilab.org/")}}
+- [“Accelerating Long-Horizon Planning with Affordance-Directed Dynamic Grounding of Abstract Skills”](http://khen.io/icra24appendix.pdf), with {{namelink(name="Khen Elimelech", link="http://khen.io")}}, {{namelink(name="Zak Kingston", link="https://zkingston.com/")}}, {{namelink(name="Moshe Vardi", link="https://www.cs.rice.edu/~vardi/")}}, and {{namelink(name="Lydia Kavraki", link="http://kavrakilab.org/")}}
+
+Thanks to the reviewers for their valuable feedback!
+"""
