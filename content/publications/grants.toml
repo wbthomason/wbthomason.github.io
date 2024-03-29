@@ -1,15 +1,15 @@
 [[grants]]
 coauthor = true
-title = "Coordinated Action Among Independent Mobile Cyber-Physical Systems"
-url = "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1646417&amp;HistoricalAwards=false"
-authors = "Knepper, Ross A. and Morrisett, Greg and Anand, Abhishek and Thomason, Wil"
-number = "1646417"
-agency = "NSF-CCF"
-
-[[grants]]
-coauthor = true
 title = "A Framework for Manipulation Planning and Execution under Uncertainty in Partially-Known Environments"
 url = "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2336612"
 authors = "Kavraki, Lydia E. and Shrivastava, Anshumali and Thomason, Wil and Kingston, Zachary K. and Pan, Tianyang"
 number = "2336612"
 agency = "NSF-FRR"
+
+[[grants]]
+coauthor = true
+title = "Coordinated Action Among Independent Mobile Cyber-Physical Systems"
+url = "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1646417&amp;HistoricalAwards=false"
+authors = "Knepper, Ross A. and Morrisett, Greg and Anand, Abhishek and Thomason, Wil"
+number = "1646417"
+agency = "NSF-CCF"
