@@ -159,7 +159,7 @@ in paper.tags %}{% if tag == "file" or tag == "extra" or tag == "abstract" or ta
       </dt>
       <dd>
         {{ self::authorlist(authors=presentation.authors) }} 
-        Presented at the 
+        Presented at {% if not presentation.no_the %}the {% endif %} 
         {% if presentation.workshop_url %}
         <a href="{{ presentation.workshop_url }}">{{ presentation.workshop_name }}</a>
         {% else %}
