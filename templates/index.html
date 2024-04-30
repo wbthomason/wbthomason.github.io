@@ -1,8 +1,9 @@
 {% extends "base.html" %} {% block content %}
+{% if config.extra.banner is defined %}
 <div class="conference-banner">
-  <h1><strong>I'm on the job market!</strong><br />I'm interested in both tenure-track
-    academic positions and full-time researcher positions in industry.</h1>
+  <h1>{{ config.extra.banner | markdown(inline=true) | safe }}</h1>
 </div>
+{% endif %}
 
 {{ section.content | safe }}
 <h1 id="news">News</h1>
