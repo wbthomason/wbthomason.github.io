@@ -1,4 +1,22 @@
 [[presentations]]
+year = "2024"
+title = "Dynamic Motion Planning from Perception via Accelerated Point Cloud Collision Checking"
+authors = "Ramsey, Clayton W. and Kingston, Zachary K. and Thomason, Wil and Kavraki, Lydia E."
+workshop_name = "Agile Robotics: From Perception to Dynamic Action"
+workshop_venue = "IEEE International Conference on Robotics and Automation (ICRA)"
+workshop_url = "https://agile-robotics-workshop.github.io/icra2024/"
+no_the = true
+
+[[presentations]]
+year = "2024"
+title = "Stochastic Implicit Neural Signed Distance Functions for Safe Motion Planning under Sensing Uncertainty"
+authors = "Quintero-Peña, Carlos and Thomason, Wil and Kingston, Zachary K. and Kavraki, Lydia E."
+workshop_name = "Back to the Future: Robot Learning Going Probabilistic"
+workshop_venue = "IEEE International Conference on Robotics and Automation (ICRA)"
+workshop_url = "https://probabilisticrobotics.github.io/"
+no_the = true
+
+[[presentations]]
 year = "2019"
 title = "A Flexible Sampling-Based Approach to Task and Motion Planning"
 authors = "Thomason, Wil and Knepper, Ross A."
