@@ -134,3 +134,17 @@ I had three papers accepted to [ICRA 2024](https://2024.ieee-icra.org/)!
 
 Thanks to the reviewers for their valuable feedback!
 """
+
+[[events]]
+date = 2024-04-30
+event = """
+I have been invited to give a spotlight talk at the [3rd annual Texas Regional Robotics Symposium (TEROS)](https://teros-texas.github.io/)!
+"""
+
+[[events]]
+date = 2024-05-10
+event = """
+My collaborators and I will present two workshop papers at [ICRA 2024](https://2024.ieee-icra.org/):
+- "Dynamic Motion Planning from Perception via Accelerated Point Cloud Collision Checking" in ["Agile Robotics: From Perception to Dynamic Action"](https://agile-robotics-workshop.github.io/icra2024/), with {{namelink(name="Clayton W. Ramsey", link="http://claytonwramsey.github.io/")}}, {{namelink(name="Zak Kingston", link="https://zkingston.com/")}}, and {{namelink(name="Lydia Kavraki", link="http://kavrakilab.org/")}}
+- [“Stochastic Implicit Neural Signed Distance Functions for Safe Motion Planning under Sensing Uncertainty”](https://arxiv.org/abs/2309.16862), in ["Back to the Future: Robot Learning Going Probabilistic"](https://probabilisticrobotics.github.io/), with {{namelink(name="Carlos Quintero-Peña", link="https://carlosquinterop.github.io/")}}, {{namelink(name="Zak Kingston", link="https://zkingston.com/")}}, {{namelink(name="Anastasios Kyrillidis", link="https://akyrillidis.github.io/")}}, and {{namelink(name="Lydia Kavraki", link="http://kavrakilab.org/")}}
+"""
