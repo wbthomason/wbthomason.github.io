@@ -1,0 +1,4 @@
++++
+template = "news.html"
++++
+

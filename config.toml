@@ -9,4 +9,4 @@ highlight_code = true
 smart_punctuation = true
 
 [extra]
-# Put all your custom variables here
+num_news_items = 5
