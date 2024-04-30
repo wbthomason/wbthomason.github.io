@@ -142,6 +142,12 @@ I have been invited to give a spotlight talk at the [3rd annual Texas Regional R
 """
 
 [[events]]
+date = 2024-04-25
+event = """
+Source code for [“Motions in Microseconds via Vectorized Sampling-Based Planning”](https://arxiv.org/abs/2309.14545) is now available at [github.com/kavrakilab/vamp](https://github.com/kavrakilab/vamp)
+"""
+
+[[events]]
 date = 2024-05-10
 event = """
 My collaborators and I will present two workshop papers at [ICRA 2024](https://2024.ieee-icra.org/):
